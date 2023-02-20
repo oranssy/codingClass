@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 참고자료 | oranssy</title>
+
+    <!-- meta tags -->
+    <meta name="Generator" content="Visual Studio Code">
+    <meta name="Subject" content="HTML Basic Reference">
+    <meta name="Title" content="HTML Basic Reference _oranssy">
+    <meta name="Author" content="최진주">
+    <meta name="Description" content="프론트엔드 개발자를 목표로 하는 최진주의 HTML 참고자료 입니다.">
+    <meta name="Keywords" content="HTML, html5, 개념, 자료, reference, publisher, frontend">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="코딩 공부 _HTML 참고자료 | oranssy">
+    <meta property="og:type" content="reference">
+    <meta property="og:image" content="https:https://oranssy.github.io/codingTstory/T_img/T_basic/cat_oran__1080.jpg">
+    <meta property="og:description" content="코딩 공부 _HTML 공부자료입니다.">
+    <meta property="og:url" content="https://">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/studyHTML_16x16.ico">
+    <link rel="icon" href="assets/img/studyHTML_16x16.ico" sizes="16x16">
+    <link rel="icon" href="assets/img/studyHTML_32x32.ico" sizes="32x32">
+    <link rel="icon" href="assets/img/studyHTML_48x48.ico" sizes="48x48">
+    <link rel="icon" href="assets/img/studyHTML_64x64.ico" sizes="64x64">
+    <link rel="icon" href="assets/img/studyHTML_128x128.ico" sizes="128x128">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/resets.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dracula.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1><a href="#">HTML 문서에 대해서 알아봅시다.</a></h1>
+        <div class="header_right">
+            <span>W3C 누구나, 어떤 환경에서든</span>
+            <span><a href="https://oranssy.tistory.com/" target="_blank" rel="noopener noreferrer">작성자 : oranssy</a></span>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <div class="main_header">
+            <h2>HTML <em>레퍼런스 북</em></h2>
+        </div>
+        <!-- //main_header -->
+
+        <nav class="main_menu">
+            <ul>
+                <li><a href="00html_refer_T.html" style="background-color: #afafaf; padding: 0.25% 0.45%; margin-bottom: 0.2%;">참고한 선생님 디자인</a></li>
+            </ul>
+            <ul>
+                <li><a href="htmlBasic.html">기본 개념</a></li>
+                <li class="active"><a href="w3c.html">웹 표준 / 웹 접근성 / 웹 호환성</a></li>
+                <li><a href="semanticMarkup.html">시멘틱 마크업</a></li>
+                <li><a href="htmlAlphabet.html">HTML 요소 참고서</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">레이아웃01</a></li>
+                <li><a href="#">레이아웃02</a></li>
+            </ul>
+        </nav>
+        <!-- //main_menu -->
+
+        <div class="main_refer">
+            <div class="document_html">
+                <h2 class="t_subject">⭐️ 웹 표준 / 웹 접근성 / 웹 호환성 ⭐️</h2>
+                <div class="t_content">
+                    <h3 class="t_cont_tit"><span class="t_cont_num">01.</span>웹 표준 (Web Standards)</h3>
+                    <p class="t_cont_desc"><i>누구나, 어떤 환경에서든 웹 사이트에 접속한 사용자가 동일한 결과를 볼 수 있도록</i>, 브라우저 종류나 버전에 상관 없이 호환이 가능하도록 제시된 기준을 말합니다.</p>
+                    <div class="t_content2">
+                        <h4 class="t_cont_tit2"><span class="t_cont_num2">1</span>W3C validator</h4>
+                        <p class="t_cont_desc2">
+                            <i>'HTML 유효성 검사'</i>를 말하며, 검사를 통해 <i>마크업에 대한 문법적 오류나 경고를 확인</i>할 수 있습니다. <br>
+                            이는 웹 표준을 준수하는 HTML 문서작성에 가장 기본이 되는 사항이며, 마크업 중간 또는 CSS에 들어가기 전에 검사합니다.
+                        </p>
+                        <div class="t_ex_box">
+                            <span class="t_link_tit"><em>W3C - 마크업 유효성 검사</em> 바로가기 &nbsp; ☛</span>
+                            <a class="t_link_desc" href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">
+                                https://validator.w3.org/
+                            </a>
+                        </div>
+                        <!-- //t_ex_box -->
+                        <div class="t_ex_box">
+                            <span class="t_link_tit"><em>W3C - CSS 유효성 검사</em> 바로가기 &nbsp; ☛</span>
+                            <a class="t_link_desc" href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer">
+                                https://jigsaw.w3.org/css-validator/
+                            </a>
+                        </div>
+                        <!-- //t_ex_box -->
+                        <div class="t_desc_refer">
+                            <h6 class="t_refer_tit">참고하기</h6>
+                            <p class="t_refer_desc"><span class="t_refer_num">1</span><span class="t_refer_point">W3C</span>(World Wide Web Consortium)</p>
+                            <p class="t_refer_desc2">월드 와이드 웹을 위한 표준을 개발하고 장려하는 국제 협회를 말합니다.</p>
+                            <p class="t_refer_desc"><span class="t_refer_num">2</span><span class="t_refer_point">마크업</span></p>
+                            <p class="t_refer_desc2">표시를 하여 문서를 구조화한다는 뜻이며, 태그를 포함하는 ' 요소(element)들로 코딩하는 것 '을 의미합니다.</p>
+                            <p class="t_refer_desc"><span class="t_refer_num">2</span><i>웹 표준을 위한 작업의 예</i></p>
+                            <p class="t_refer_desc2">
+                                <span class="t_refer_point">HTML / CSS 분리</span> HTML 문서에 CSS 파일을 링크로 연결합니다. <br>
+                                <span class="t_refer_point">시멘틱 마크업</span> 의미에 맞는 태그를 사용하여 논리적인 순서에 따라 문서를 작성합니다. <br>
+                                <span class="t_refer_point">id / class 사용</span> 특정 요소에 이름을 지정하여 표현 및 동작을 제어합니다.
+                            </p>
+                        </div>
+                        <!-- //t_desc_refer -->
+                    </div>
+                    <!-- //t_content2 -->
+                    <div class="t_content2">
+                        <h4 class="t_cont_tit2"><span class="t_cont_num2">2</span>웹 표준의 장점</h4>
+                        <table class="t_table">
+                            <caption>웹 표준의 장점</caption>
+                            <colgroup>
+                                <col style="width: 5%;">
+                                <col style="width: 20%;">
+                                <col style="width: 65%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">No</th>
+                                    <th scope="col">장점</th>
+                                    <th scope="col">설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="ce ve" scope="row">1</th>
+                                    <td class="ve">수정 및 관리 용이</td>
+                                    <td>콘텐츠의 문법적 구조화를 통해 제어하므로, 페이지 제작과 수정 및 관리가 쉽습니다.</td>
+                                </tr>
+                                <tr>
+                                    <th class="ce ve" scope="row">2</th>
+                                    <td class="ve">호환성 및 접근성 향상</td>
+                                    <td>다양한 브라우저, 모바일, PDA, 장애인 지원용 프로그램 등에서 정상적인 작동이 가능하므로, 어떤 사용자라도 접근하여 이용할 수 있습니다.</td>
+                                </tr>
+                                <tr>
+                                    <th class="ce ve" scope="row">3</th>
+                                    <td class="ve">검색 엔진 최적화 (SEO)</td>
+                                    <td>구조화된 웹 페이지는 검색 엔진에 효과적으로 노출됩니다.</td>
+                                </tr>
+                                <tr>
+                                    <th class="ce ve" scope="row">4</th>
+                                    <td class="ve">서버 공간 절약 / <br> 로딩 시간 단축</td>
+                                    <td>효율적인 소스 작성으로 구조화한 문서는 파일 사이즈 축소 및 서버 공간을 절약하여, 화면에 표시되는 소요 시간을 감소시킬 수 있습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- //t_table -->
+                        <div class="t_ex_box">
+                            <span class="t_link_tit"><em>웹 발전 연구소</em> 바로가기 &nbsp; ☛</span>
+                            <a class="t_link_desc" href="http://www.smartebiz.kr/new/subpage02_02.html" target="_blank" rel="noopener noreferrer">
+                                http://www.smartebiz.kr/new.html
+                            </a>
+                        </div>
+                        <!-- //t_ex_box -->
+                    </div>
+                    <!-- //t_content2 -->
+                </div>
+                <!-- //t_content -->
+
+                <div class="t_content">
+                    <h3 class="t_cont_tit"><span class="t_cont_num">02.</span>웹 접근성 (Web Accessibility)</h3>
+                    <p class="t_cont_desc">
+                        장애인, 노약자 등의 <i>어떤 사용자가 어느 기술환경에서도 신체적 차이나 지식의 정도 등에 의한 불편함 없이</i>, <br>
+                        웹 사이트에서 제공하는 <i>모든 정보에 접근할 수 있도록 보장</i>하는 것을 말합니다.
+                    </p>
+                    <div class="t_desc_refer">
+                        <h6 class="t_refer_tit">참고하기</h6>
+                        <p class="t_refer_desc"><span class="t_refer_num">1</span>웹 접근성 도구의 예</p>
+                        <p class="t_refer_desc2">
+                            <span class="t_refer_point">스크린 리더기</span> (음성 낭독 프로그램) HTML 문서의 텍스트를 읽어줍니다. <br>
+                            <span class="t_refer_point">화면 확대 도구</span> 화면의 배율을 조절해줍니다. <br>
+                            <span class="t_refer_point">음성 인식 도구</span> 사용자의 음성을 텍스트로 입력합니다. <br>
+                            <span class="t_refer_point">키보드 오버레이</span> 화면에 가상의 키보드를 띄워줍니다.
+                        </p>
+                        <p class="t_refer_desc"><span class="t_refer_num">2</span>웹 접근성을 위한 작업</p>
+                        <p class="t_refer_desc2">로그인, 보안, 구간 암호화, 공인 인증, 영상, 멀티 미디어, 파일 송수신 등에서 사용자의 접근성이 고려되었는지를 점검합니다.</p>
+                        <p class="t_refer_desc2">CSS에서 사이즈 단위를 px 등으로 통일하는 것이 음성 인식에 편리합니다.</p>
+                    </div>
+                    <!-- //t_desc_refer -->
+                    <div class="t_content2">
+                        <h4 class="t_cont_tit2"><span class="t_cont_num2">1</span>웹 접근성을 위한 태그의 속성</h4>
+                        <div class="t_example">
+                            <div class="t_ex_sub">
+                                <h6 class="t_ex_subTit"><span class="t_ex_num">1</span>&lt; html &gt; 의 lang 속성</h6>
+                                <p class="t_ex_desc">스크린 리더기는 <i>lang 속성에서 설정한 언어에 따라</i> HTML 문서의 텍스트를 읽어줍니다.</p>
+                                <div class="t_code">
+<pre><code class="language-html">&lt;html lang = "ko"&gt;          // 언어를 한국어로 설정 : 숫자를 " 일, 이, 삼 " 으로 읽음</code></pre>
+                                </div>
+                                <!-- //t_code -->
+                            </div>
+                            <!-- //t_ex_sub -->
+                            <div class="t_ex_sub">
+                                <h6 class="t_ex_subTit"><span class="t_ex_num">2</span>&lt; img &gt; 의 alt 속성</h6>
+                                <p class="t_ex_desc">
+                                    스크린 리더기는 이미지를 읽을 수 없으므로, <i>&lt; img &gt; 의 alt 속성 값에 대체 문자를 기재</i>하여 이미지에 대한 정보를 제공합니다. <br>
+                                    이미지에 대한 정보를 제공할 필요가 없을 경우에는 alt 속성만 정의해도 됩니다.
+                                </p>
+                                <div class="t_code">
+<pre><code class="language-html">&lt;img src="assets/img/복숭아_단면.png" alt="씨앗이 보이도록 반으로 자른 복숭아"&gt;
+&lt;img src="assets/img/무화과_단면.png" alt&gt;
+</code></pre>
+                                </div>
+                                <!-- //t_code -->
+                            </div>
+                            <!-- //t_ex_sub -->
+                            <div class="t_ex_sub">
+                                <h6 class="t_ex_subTit"><span class="t_ex_num">3</span>&lt; a &gt; 의 target, title 속성</h6>
+                                <p class="t_ex_desc">
+                                    &lt; a &gt; 의 target 속성은 링크로 연결된 HTML 문서를 어느 창의 위치에서 열어줄 것인지 정하는 속성입니다. <br>
+                                    속성 값 중에서 가장 많이 사용하는 <i>target="_blank"</i>는 스크린 리더기에서 링크된 <i>문서가 '새 창'에서 열린다는 것을 미리 알려주는 역할</i>도 합니다. <br>
+                                    Javascript 로 새 창을 열어주는 경우에는 title 속성으로 새 창으로 열린다는 것을 알려주어야 합니다.
+                                </p>
+                                <div class="t_code">
+<pre><code class="language-html">&lt;a href="https://oranssy.tistory.com/" target="_blank"&gt;깜냥깜냥 코딩 혜윰&lt;/a&gt;</code></pre>
+                                </div>
+                                <!-- //t_code -->
+                                <div class="t_code">
+<pre><code class="language-html">&lt;a href="#" onclick="window.open('https://oranssy.tistory.com/');return false" title="새 창"&gt;깜냥깜냥 코딩 혜윰&lt;/a&gt;</code></pre>
+                                </div>
+                                <!-- //t_code -->
+                                <div class="t_desc_refer">
+                                    <h6 class="t_refer_tit">참고하기</h6>
+                                    <p class="t_refer_desc"><span class="t_refer_num">1</span>target 속성 값의 종류</p>
+                                    <p class="t_refer_desc2">
+                                        <span class="t_refer_point">_self</span> 현재 창에 링크를 열어줍니다. (기본값, 생략 가능) <br>
+                                        <span class="t_refer_point">_blank</span> 새로운 창 또는 탭에서 링크를 열어줍니다. <br>
+                                        <span class="t_refer_point">_parent</span> 현재 창의 부모 창에서 링크를 열어줍니다. <br>
+                                        <span class="t_refer_point">_top</span> 현재 창의 최상위 창에서 링크를 열어줍니다.
+                                    </p>
+                                </div>
+                                <!-- //t_desc_refer -->
+                            </div>
+                            <!-- //t_ex_sub -->
+                            <div class="t_ex_sub">
+                                <h6 class="t_ex_subTit"><span class="t_ex_num">4</span>&lt; table &gt; 의 &lt; caption &gt;</h6>
+                                <p class="t_ex_desc">
+                                    스크린 리더기는 <i>&lt; caption &gt; 에 기재한 표의 제목을 읽어주어</i>, 표가 어떤 내용을 담고 있는지 알려줍니다. <br>
+                                    caption 태그는 &lt; table &gt; 의 바로 밑 줄에 입력합니다.
+                                </p>
+                                <div class="t_desc_refer">
+                                    <h6 class="t_refer_tit">참고하기</h6>
+                                    <p class="t_refer_desc"><span class="t_refer_num">1</span><span class="t_refer_point">&lt; caption &gt; 텍스트 숨기기</span></p>
+                                    <p class="t_refer_desc2">
+                                        요소 내용의 <i>텍스트를 CSS로 숨겨야 하는 경우</i>가 있습니다. <br>
+                                        이 때 / display: none; / visibility: hidden; / width: 0; / height: 0; / font-size:0; / 등을 사용하면 <br>
+                                        화면에 없는 영역으로 넘어가게 되어 설명 내용이 보이지 않을 뿐만 아니라, 스크린 리더기에서도 읽을 수 없기 때문에 사용해서는 안 됩니다.
+                                    </p>
+                                    <p class="t_refer_desc"><span class="t_refer_num">2</span><span class="t_refer_point">웹 접근성을 고려한 텍스트 숨기기</span> - 네이버의 blind 효과</p>
+                                    <div class="t_code">
+<pre><code class="language-css">.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+</code></pre>
+                                    </div>
+                                    <!-- //t_code -->
+                                </div>
+                                <!-- //t_desc_refer -->
+                            </div>
+                            <!-- //t_ex_sub -->
+                            <div class="t_ex_sub">
+                                <h6 class="t_ex_subTit"><span class="t_ex_num">5</span>&lt; table &gt; 의 scope 속성</h6>
+                                <p class="t_ex_desc">
+                                    scope 속성은 제목 셀에 내용 셀과의 관계를 나타내는 것으로, <i>스크린 리더기가 셀을 읽는 순서를 알려주는 역할</i>을 합니다. <br>
+                                    행 또는 열의 제목 셀 &lt; th &gt;에 정의합니다.
+                                </p>
+                                <div class="t_desc_refer">
+                                    <h6 class="t_refer_tit">참고하기</h6>
+                                    <p class="t_refer_desc"><span class="t_refer_num">1</span>행과 열</p>
+                                    <p class="t_refer_desc2">
+                                        <span class="t_refer_point">행</span> Row, 가로 <br>
+                                        <span class="t_refer_point">열</span> Column, 세로
+                                    </p>
+                                </div>
+                                <!-- //t_desc_refer -->
+                                <div class="t_example">
+                                    <h5 class="t_ex_tit">scope 속성 설정해보기</h5>
+                                    <div class="t_img" style="width: 60%;"><img src="assets/img/w3c_tableScope.png" alt="테이블 태그의 스코프 속성 값"></div>
+                                    <div class="t_iframe">
+                                        <iframe title="table_caption &amp; scope" src="https://codepen.io/oranssy/embed/abjgood?default-tab=html%2Cresult&theme-id=dark"></iframe>
+                                    </div>
+                                    <!-- //t_iframe -->
+                                </div>
+                                <!-- //t_example -->
+                            </div>
+                            <!-- //t_ex_sub -->
+                            <div class="t_ex_sub">
+                                <h6 class="t_ex_subTit"><span class="t_ex_num">6</span>&lt; form &gt; 의 &lt; label &gt;</h6>
+                                <p class="t_ex_desc">
+                                    스크린 리더기는 <i>&lt; label &gt; 에 기재한 사용자 입력 태그의 제목을 읽어주어</i>, 어떤 값을 입력하고 선택해야 하는지 알려줍니다. <br>
+                                    &lt; label &gt; 태그의 내용이 사용자 입력 태그의 제목이라는 것을 알리기 위해서는 <br>
+                                    &lt; label &gt; 태그의 <i>for 속성 값과 사용자 입력 태그의 id 속성 값이 일치</i>해야 합니다.
+                                </p>
+                                <div class="t_code">
+<pre><code class="language-html">&lt;label for="pw"&gt;비밀번호&lt;/label&gt;&lt;input type="password" id="pw"&gt;</code></pre>
+                                </div>
+                                <!-- //t_code -->
+                            </div>
+                            <!-- //t_ex_sub -->
+                        </div>
+                        <!-- //t_example -->
+                    </div>
+                    <!-- //t_content2 -->
+                    <div class="t_content2">
+                        <h4 class="t_cont_tit2"><span class="t_cont_num2">2</span>한국형 웹 콘텐츠 접근성 지침 2.2</h4>
+                        <p class="t_cont_desc2">
+                            이 표준은 방송통신표준화법 관련 규정에 따라 방송통신표준심의회 심의를 거쳐 개정한 방송통신 표준 입니다. <br>
+                            <i>장애인, 고령자와 같은 사람들이 비장애인, 젊은이와 동등하게 웹에 접근</i>할 수 있도록, 웹 콘텐츠를 제작할 때 준수해야 하는 여러 가지 지침들을 기술하고 있습니다.
+                        </p>
+                        <div class="t_example">
+                            <details>
+                                <summary>
+                                    <h5 class="t_ex_tit">세부내용 보기</h5>
+                                </summary>
+                                <div class="t_ex_sub">
+                                    <h6 class="t_ex_subTit"><span class="t_ex_num">1</span>인식의 용이성 (perceivable)</h6>
+                                    <p class="t_ex_desc">사용자가 장애 유무 등에 관계없이 웹사이트에서 제공하는 모든 콘텐츠를 동등하게 인식할 수 있어야 합니다.</p>
+                                    <table class="t_table">
+                                        <caption>인식의 용이성에 대한 세부 지침내용</caption>
+                                        <colgroup>
+                                            <col style="width: 20%;">
+                                            <col style="width: 80%;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">지침</th>
+                                                <th scope="col">평가 지표</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="ce ve" scope="row">5.1. 대체 텍스트</th>
+                                                <td class="ve">(적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="ce ve" scope="row">5.2. 멀티미디어 대체수단</th>
+                                                <td class="ve">(자막 제공) 멀티미디어 콘텐츠에는 자막, 대본 또는 수어를 제공해야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="ce ve" rowspan="3" scope="rowgroup">5.3. 적응성</th>
+                                                <td class="ve">(표의 구성) 표는 이해하기 쉽게 구성해야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(콘텐츠의 선형구조) 콘텐츠는 논리적인 순서로 제공해야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(명확한 지시사항 제공) 지시사항은 모양, 크기, 위치, 방향, 색, 소리 등에 관계없이 인식될 수 있어야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="ce ve" rowspan="4" scope="rowgroup">5.4. 명료성</th>
+                                                <td class="ve">(색에 무관한 콘텐츠 인식) 콘텐츠는 색에 관계없이 인식될 수 있어야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(자동 재생 금지) 자동으로 소리가 재생되지 않아야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(텍스트 콘텐츠의 명도 대비) 텍스트 콘텐츠와 배경 간의 명도 대비는 4.5 대 1 이상이어야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(콘텐츠 간의 구분) 이웃한 콘텐츠는 구별될 수 있어야 한다.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- //t_table -->
+                                </div>
+                                <!-- //t_ex_sub -->
+                                <div class="t_ex_sub">
+                                    <h6 class="t_ex_subTit"><span class="t_ex_num">2</span>운용의 용이성 (operable)</h6>
+                                    <p class="t_ex_desc">사용자가 장애 유무 등에 관계없이 웹사이트에서 제공하는 모든 기능을 운용할 수 있어야 합니다.</p>
+                                    <div class="t_desc_refer">
+                                        <h6 class="t_refer_tit">참고하기</h6>
+                                        <p class="t_refer_desc"><span class="t_refer_num">1</span>운용 (運用)</p>
+                                        <p class="t_refer_desc2">
+                                            도구의 기능과 성능을 적절하게 사용하는 것을 의미합니다.
+                                        </p>
+                                    </div>
+                                    <!-- //t_desc_refer -->
+                                    <table class="t_table">
+                                        <caption>운용의 용이성에 대한 세부 지침내용</caption>
+                                        <colgroup>
+                                            <col style="width: 20%;">
+                                            <col style="width: 80%;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">지침</th>
+                                                <th scope="col">평가 지표</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="ce ve" rowspan="4" scope="rowgroup">6.1. 입력장치 접근성</th>
+                                                <td class="ve">(키보드 사용 보장) 모든 기능은 키보드만으로도 사용할 수 있어야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(조작 가능) 사용자 입력 및 콘트롤은 조작 가능하도록 제공되어야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(문자 단축키) 문자 단축키는 오동작으로 인한 오류를 방지하여야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="ce ve" rowspan="2" scope="rowgroup">6.2. 충분한 시간 제공</th>
+                                                <td class="ve">(응답시간 조절) 시간제한이 있는 콘텐츠는 응답시간을 조절할 수 있어야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(정지 기능 제공) 자동으로 변경되는 콘텐츠는 움직임을 제어할 수 있어야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="ce ve" scope="row">6.3. 광과민성 발작 예방</th>
+                                                <td class="ve">(깜빡임과 번쩍임 사용 제한) 초당 3~50회 주기로 깜빡이거나 번쩍이는 콘텐츠를 제공하지 않아야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="ce ve" rowspan="4" scope="rowgroup">6.4 쉬운 내비게이션</th>
+                                                <td class="ve">(반복 영역 건너뛰기) 콘텐츠의 반복되는 영역은 건너뛸 수 있어야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(제목 제공) 페이지, 프레임, 콘텐츠 블록에는 적절한 제목을 제공해야 한다. </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(고정된 참조 위치 정보) 전자출판문서 형식의 웹 페이지는 각 페이지로 이동할 수 있는 기능이 있어야 하고, 서식이나 플랫폼에 상관없이 참조 위치 정보를 일관되게 제공ㆍ유지해야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="ce ve" rowspan="4" scope="rowgroup">6.5. 입력 방식</th>
+                                                <td class="ve">(단일 포인터 입력 지원) 다중 포인터 또는 경로기반 동작을 통한 입력은 단일 포인터 입력으로도 조작할 수 있어야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(포인터 입력 취소) 단일 포인터 입력으로 실행되는 기능은 취소할 수 있어야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(레이블과 네임) 텍스트 또는 텍스트 이미지가 포함된 레이블이 있는 사용자 인터페이스 구성요소는 네임에 시각적으로 표시되는 해당 텍스트를 포함해야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(동작기반 작동) 동작기반으로 작동하는 기능은 사용자 인터페이스 구성요소로 조작할 수 있고, 동작기반 기능을 비활성화할 수 있어야 한다.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- //t_table -->
+                                </div>
+                                <!-- //t_ex_sub -->
+                                <div class="t_ex_sub">
+                                    <h6 class="t_ex_subTit"><span class="t_ex_num">3</span>이해의 용이성 (understandable)</h6>
+                                    <p class="t_ex_desc">사용자가 장애 유무 등에 관계없이 웹 사이트에서 제공하는 콘텐츠를 이해할 수 있어야 합니다.</p>
+                                    <table class="t_table">
+                                        <caption>이해의 용이성에 대한 세부 지침내용</caption>
+                                        <colgroup>
+                                            <col style="width: 20%;">
+                                            <col style="width: 80%;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">지침</th>
+                                                <th scope="col">평가 지표</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="ce ve" scope="row">7.1. 가독성</th>
+                                                <td class="ve">(기본 언어 표시) 주로 사용하는 언어를 명시해야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="ce ve" rowspan="2" scope="rowgroup">7.2 예측 가능성</th>
+                                                <td class="ve">(사용자 요구에 따른 실행) 사용자가 의도하지 않은 기능(새 창, 초점에 의한 맥락 변화 등)은 실행되지 않아야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(찾기 쉬운 도움 정보) 도움 정보가 제공되는 경우, 각 페이지에서 동일한 상대적인 순서로 접근할 수 있어야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="ce ve" rowspan="4" scope="rowgroup">7.3. 입력 도움</th>
+                                                <td class="ve">(오류 정정) 입력 오류를 정정할 수 있는 방법을 제공해야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(레이블 제공) 사용자 입력에는 대응하는 레이블을 제공해야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(접근 가능한 인증) 인증 과정은 인지 기능 테스트에만 의존해서는 안 된다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ve">(반복 입력 정보) 반복되는 입력 정보는 자동 입력 또는 선택 입력할 수 있어야 한다.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- //t_table -->
+                                </div>
+                                <!-- //t_ex_sub -->
+                                <div class="t_ex_sub">
+                                    <h6 class="t_ex_subTit"><span class="t_ex_num">4</span>견고성 (robust)</h6>
+                                    <p class="t_ex_desc">사용자가 기술에 영향을 받지 않고 콘텐츠를 이용할 수 있어야 합니다.</p>
+                                    <table class="t_table">
+                                        <caption>견고성에 대한 세부 지침내용</caption>
+                                        <colgroup>
+                                            <col style="width: 20%;">
+                                            <col style="width: 80%;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">지침</th>
+                                                <th scope="col">평가 지표</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="ce ve" scope="row">8.1. 문법 준수</th>
+                                                <td class="ve">(마크업 오류 방지) 마크업 언어의 요소는 열고 닫음, 중첩 관계 및 속성 선언에 오류가 없어야 한다.</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="ce ve" scope="row">8.2. 웹 애플리케이션 접근성</th>
+                                                <td class="ve">(웹 애플리케이션 접근성 준수) 콘텐츠에 포함된 웹 애플리케이션은 접근성이 있어야 한다. </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- //t_table -->
+                                </div>
+                                <!-- //t_ex_sub -->
+                            </details>
+                            <!-- //details -->
+                        </div>
+                        <!-- //t_example -->
+                        <div class="t_ex_box">
+                            <span class="t_link_tit"><em>한국형 웹 콘텐츠 접근성 지침 2.2</em> 바로가기 &nbsp; ☛</span>
+                            <a class="t_link_desc" href="http://www.wa.or.kr/board/view.asp?sn=22592&page=1&search=&SearchString=&BoardID=0004&cate=" target="_blank" rel="noopener noreferrer">
+                                http://www.wa.or.kr/index.asp
+                            </a>
+                        </div>
+                        <!-- //t_ex_box -->
+                    </div>
+                    <!-- //t_content2 -->
+                    <div class="t_content2">
+                        <h4 class="t_cont_tit2"><span class="t_cont_num2">3</span>웹 접근성 진단 도구</h4>
+                        <p class="t_cont_desc2">
+                            네이버 누리에서 스크린 리더, 명도 대비, 웹 콘텐츠 구성 요소, 컨트롤의 대각선 길이 등에 대한 웹 접근성 진단 도구를 이용할 수 있습니다.
+                        </p>
+                        <div class="t_ex_box">
+                            <span class="t_link_tit"><em>네이버 누리 - 웹 접근성 진단 도구</em> 바로가기 &nbsp; ☛</span>
+                            <a class="t_link_desc" href="https://nuli.navercorp.com/education/tools" target="_blank" rel="noopener noreferrer">
+                                https://nuli.navercorp.com/
+                            </a>
+                        </div>
+                        <!-- //t_ex_box -->
+                    </div>
+                    <!-- //t_content2 -->
+                </div>
+                <!-- //t_content -->
+
+                <div class="t_content">
+                    <h3 class="t_cont_tit"><span class="t_cont_num">03.</span>웹 호환성 (Cross Browsing)</h3>
+                    <p class="t_cont_desc">
+                        운영체제나 브라우저 등에서 어느 한쪽으로 최적화되거나 종속되지 않고, <i>어떤 매체를 통해서든 동등한 서비스를 이용할 수 있도록</i> 공통 요소를 사용하여 웹 페이지를 제작하는 것을 의미합니다. <br>
+                        쉽게 말해서 웹 표준 기술을 바탕으로 <i>최대한 많은 종류의 웹 브라우저에서 정상적으로 작동하는 웹 페이지를 제작하는 것</i>이라고 할 수 있습니다.
+                    </p>
+                    <div class="t_ex_box">
+                        <span class="t_link_tit"><em>웹 소울랩</em> 바로가기 &nbsp; ☛</span>
+                        <a class="t_link_desc" href="http://www.websoul.co.kr/consulting/compatibility.asp" target="_blank" rel="noopener noreferrer">
+                            http://www.websoul.co.kr/
+                        </a>
+                    </div>
+                    <!-- //t_ex_box -->
+                    <div class="t_desc_refer">
+                        <h6 class="t_refer_tit">참고하기</h6>
+                        <p class="t_refer_desc"><span class="t_refer_num">1</span>웹 호환성을 위한 작업</p>
+                        <p class="t_refer_desc2">
+                            웹 브라우저 페이지의 기능이 정상 작동하는지, 다양한 웹 브라우저의 버전에서 동등하게 구현되는지, 최신 웹 표준 기술을 사용하였는지 여부를 점검합니다.
+                        </p>
+                    </div>
+                    <!-- //t_desc_refer -->
+                </div>
+                <!-- //t_content -->
+            </div>
+            <!-- //document_html -->
+        </div>
+        <!-- //main_refer -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <a href="mailto:oranssy@daum.net">oranssy@daum.net</a>
+    </footer>
+    <!-- //footer -->
+
+    <!-- 코드 블럭 (하이라이트) -->
+    <script src="assets/js/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+</html>

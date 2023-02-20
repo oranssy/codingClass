@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 참고자료 | oranssy</title>
+
+    <!-- meta tags -->
+    <meta name="Generator" content="Visual Studio Code">
+    <meta name="Subject" content="HTML Basic Reference">
+    <meta name="Title" content="HTML Basic Reference _oranssy">
+    <meta name="Author" content="최진주">
+    <meta name="Description" content="프론트엔드 개발자를 목표로 하는 최진주의 HTML 참고자료 입니다.">
+    <meta name="Keywords" content="HTML, html5, 개념, 자료, reference, publisher, frontend">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="코딩 공부 _HTML 참고자료 | oranssy">
+    <meta property="og:type" content="reference">
+    <meta property="og:image" content="https:https://oranssy.github.io/codingTstory/T_img/T_basic/cat_oran__1080.jpg">
+    <meta property="og:description" content="코딩 공부 _HTML 공부자료입니다.">
+    <meta property="og:url" content="https://">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/studyHTML_16x16.ico">
+    <link rel="icon" href="assets/img/studyHTML_16x16.ico" sizes="16x16">
+    <link rel="icon" href="assets/img/studyHTML_32x32.ico" sizes="32x32">
+    <link rel="icon" href="assets/img/studyHTML_48x48.ico" sizes="48x48">
+    <link rel="icon" href="assets/img/studyHTML_64x64.ico" sizes="64x64">
+    <link rel="icon" href="assets/img/studyHTML_128x128.ico" sizes="128x128">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/resets.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dracula.css">
+
+    <!-- 구글 아이콘 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header id="header">
+        <h1><a href="#">HTML 문서에 대해서 알아봅시다.</a></h1>
+        <div class="header_right">
+            <span>elements</span>
+            <span><a href="https://oranssy.tistory.com/" target="_blank" rel="noopener noreferrer">작성자 : oranssy</a></span>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <div class="main_header">
+            <h2>HTML <em>레퍼런스 북</em></h2>
+        </div>
+        <!-- //main_header -->
+
+        <nav class="main_menu">
+            <ul>
+                <li><a href="00html_refer_T.html" style="background-color: #afafaf; padding: 0.25% 0.45%; margin-bottom: 0.2%;">참고한 선생님 디자인</a></li>
+            </ul>
+            <ul>
+                <li><a href="htmlBasic.html">기본 개념</a></li>
+                <li><a href="w3c.html">웹 표준 / 웹 접근성 / 웹 호환성</a></li>
+                <li><a href="semanticMarkup.html">시멘틱 마크업</a></li>
+                <li class="active"><a href="htmlAlphabet.html">HTML 요소 참고서</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">레이아웃01</a></li>
+                <li><a href="#">레이아웃02</a></li>
+            </ul>
+        </nav>
+        <!-- //main_menu -->
+
+        <div class="main_refer">
+            <div class="document_html">
+                <h2 class="t_subject">⭐️ HTML 요소 참고서 ⭐️</h2>
+                <div class="t_content">
+                    <table class="t_table" style="width: 96%;">
+                        <caption>HTML 요소 참고서</caption>
+                        <colgroup>
+                            <col style="width: 5%;">
+                            <col style="width: 13%;">
+                            <col>
+                            <col style="width: 5%;">
+                            <col style="width: 5%;">
+                            <col style="width: 5%;">
+                            <col style="width: 8%;">
+                            <col style="width: 7%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">요소</th>
+                                <th scope="col">설명</th>
+                                <th scope="col"><img style="padding-top: 2px;" src="https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png" alt="MDN"></th>
+                                <th scope="col"><img style="padding-top: 2px;" src="https://resources.whatwg.org/logo.svg" alt="WHATWG"></th>
+                                <th scope="col"><img style="padding-top: 2px;" src="http://tcpschool.com/img/tcpschool_og_logo.png" alt="TCP school"></th>
+                                <th scope="col" style="font-size: 13px;">사용 빈도</th>
+                                <th scope="col">비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">01</th>
+                                <td class="ce ve">&lt;a&gt;</td>
+                                <td class="ve">href 속성을 통해 다른 페이지나 같은 페이지의 어느 위치, 파일, 이메일 주소와 그 외 다른 URL로 연결할 수 있는 하이퍼링크를 만듭니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/a" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/a" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">02</th>
+                                <td class="ce ve">&lt;abbr&gt;</td>
+                                <td class="ve">줄임말이나 머리글자를 표현합니다. title 속성으로 전체 뜻을 제공할 수 있습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/abbr" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-abbr-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/abbr" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">03</th>
+                                <td class="ce ve">&lt;acronym&gt;</td>
+                                <td class="ve">머리글자를 표현할 때 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/acronym" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/acronym" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">04</th>
+                                <td class="ce ve">&lt;address&gt;</td>
+                                <td class="ve">연락처 정보를 표현합니다. &lt;article&gt; 안에서 글의 작성자를 나타낼 수도 있습니다. 기울임꼴로 렌더링됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/address" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/sections.html#the-address-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/address" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">05</th>
+                                <td class="ce ve">&lt;applet&gt;</td>
+                                <td class="ve">자바 애플릿이 보이게 하는 경우에 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/applet" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/applet" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">06</th>
+                                <td class="ce ve">&lt;area&gt;</td>
+                                <td class="ve">이미지 맵의 영역을 정의합니다. 하이퍼링크를 추가할 수 있으며, &lt;map&gt; 요소 안에서만 사용 가능합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/area" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/image-maps.html#the-area-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/area" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">☆☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;">빈 요소</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">07</th>
+                                <td class="ce ve">&lt;article&gt;</td>
+                                <td class="ve">HTML 문서 내에서 독립적으로 배포하거나 재사용할 수 있는 콘텐츠 영역을 설정합니다. 게시물, 뉴스 기사, 블로그 포스팅 등을 다룹니다. 제목 요소를 포함해야 합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/article" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/sections.html#the-article-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/article" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">08</th>
+                                <td class="ce ve">&lt;aside&gt;</td>
+                                <td class="ve">문서의 주요 콘텐츠와 직접적으로 관련이 없는 보조 영역을 설정합니다. 사이드 메뉴, 광고 등을 다룹니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/aside" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/sections.html#the-aside-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/aside" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">09</th>
+                                <td class="ce ve">&lt;audio&gt;</td>
+                                <td class="ve">문서에 오디오 콘텐츠를 삽입합니다. &lt;source&gt; 요소를 사용해 한 개 이상의 오디오 소스를 지정할 수 있습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/audio" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/media.html#the-audio-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/audio" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">10</th>
+                                <td class="ce ve">&lt;b&gt;</td>
+                                <td class="ve">텍스트의 중요 표시 또는 강조를 위함이 아닌 다른 텍스트와의 구별을 위해 사용하며, 굵은 글씨체로 렌더링됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/b" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-b-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/b" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">☆☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">11</th>
+                                <td class="ce ve">&lt;base&gt;</td>
+                                <td class="ve">문서 안의 모든 URL의 기준 URL을 지정합니다. 문서에는 하나의 &lt;base&gt; 요소만 존재할 수 있습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/base" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/semantics.html#the-base-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/base" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">☆☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;">빈 요소</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">12</th>
+                                <td class="ce ve">&lt;bdi&gt;</td>
+                                <td class="ve">텍스트를 주변 텍스트와 분리하여 처리하는 양방향 텍스트 영역을 지정합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdi-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/bdi" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">13</th>
+                                <td class="ce ve">&lt;bdo&gt;</td>
+                                <td class="ve">현재 텍스트의 쓰기 방향을 다른 방향으로 재정의하여 렌더링합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/bdo" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdo-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/bdo" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">14</th>
+                                <td class="ce ve">&lt;bgsound&gt;</td>
+                                <td class="ve">페이지가 사용되는 동안 배경에서 재생할 사운드 파일을 설정할 때 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bgsound" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">15</th>
+                                <td class="ce ve">&lt;big&gt;</td>
+                                <td class="ve">텍스트를 주변 텍스트보다 한 단계 더 큰 글꼴 크기로 렌더링할 때 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/big" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/big" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">16</th>
+                                <td class="ce ve">&lt;blink&gt;</td>
+                                <td class="ve">포함된 텍스트가 느리게 깜박이도록 설정할 때 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">17</th>
+                                <td class="ce ve">&lt;blockquote&gt;</td>
+                                <td class="ve">긴 인용문임을 표현할 때 사용하며, 주로 들여쓰기를 한 것으로 그려집니다. cite 속성으로 인용문의 출처 URL을 제공하고, 출처 텍스트는 &lt;cite&gt; 요소로 제공합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/blockquote" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/blockquote" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">18</th>
+                                <td class="ce ve">&lt;body&gt;</td>
+                                <td class="ve">HTML 문서의 본문에 해당하는 모든 콘텐츠를 포함하는 영역을 설정합니다. 한 문서에 하나의 &lt;body&gt; 태그만 존재할 수 있습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/body" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/sections.html#the-body-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/body" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">19</th>
+                                <td class="ce ve">&lt;br&gt;</td>
+                                <td class="ve">텍스트 안에서 줄바꿈을 시행합니다. </td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/br" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-br-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/br" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;">빈 요소</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">20</th>
+                                <td class="ce ve">&lt;button&gt;</td>
+                                <td class="ve" target="_blank" rel="noopener noreferrer">Go 가능한 버튼을 표현합니다. 문서의 어디든 만들 수 있습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/button" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/rendering.html#the-button-element-2" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/button" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">21</th>
+                                <td class="ce ve">&lt;canvas&gt;</td>
+                                <td class="ve">비트맵 방식의 컨테이너 입니다. 캔버스 스크립팅 API 또는 WebGL API와 함께 사용해 그래픽과 애니메이션을 그릴 때 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/canvas" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/canvas" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">22</th>
+                                <td class="ce ve">&lt;caption&gt;</td>
+                                <td class="ve">표의 설명 또는 제목을 표현합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/caption" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/tables.html#the-caption-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/caption" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;">웹 접근성</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">23</th>
+                                <td class="ce ve">&lt;center&gt;</td>
+                                <td class="ve">요소를 가운데 정렬하기 위해 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/center" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/center" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">24</th>
+                                <td class="ce ve">&lt;cite&gt;</td>
+                                <td class="ve">저작물의 출처를 표기합니다. 제목을 반드시 포함해야 합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/cite" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-cite-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/cite" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">25</th>
+                                <td class="ce ve">&lt;code&gt;</td>
+                                <td class="ve">컴퓨터의 소스 코드를 나타낼 때 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/code" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-code-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/code" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">26</th>
+                                <td class="ce ve">&lt;col&gt;</td>
+                                <td class="ve">&lt;colgroup&gt; 요소에 속하는 각 열의 속성을 설정할 때 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/col" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/tables.html#the-col-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/col" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;">빈 요소</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">27</th>
+                                <td class="ce ve">&lt;colgroup&gt;</td>
+                                <td class="ve">표의 열을 묶는 그룹을 정의합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/colgroup" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/tables.html#the-colgroup-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/colgroup" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;">빈 요소</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">28</th>
+                                <td class="ce ve">&lt;content&gt;</td>
+                                <td class="ve">Shadow DOM 내부에서 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/content" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">29</th>
+                                <td class="ce ve">&lt;data&gt;</td>
+                                <td class="ve">해당 콘텐츠를 기계가 읽을 수 있는 형태의 데이터 값과 연결할 때 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/data" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-data-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/data" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">30</th>
+                                <td class="ce ve">&lt;datalist&gt;</td>
+                                <td class="ve">선택 목록 &lt;option&gt; 요소를 포함하며, 데이터 입력 시 자동 완성 기능을 제공합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/datalist" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/datalist" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">31</th>
+                                <td class="ce ve">&lt;dd&gt;</td>
+                                <td class="ve">&lt;dl&gt; 안에서 &lt;dt&gt;의 용어 제목에 대한 설명, 정의, 또는 값을 표현할 때 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/dd" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-dd-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/dd" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">32</th>
+                                <td class="ce ve">&lt;del&gt;</td>
+                                <td class="ve">텍스트 가운데에 가로줄을 그어, 삭제된 텍스트의 범위를 설정합니다. 뒤에 &lt;ins&gt;로 추가된 텍스트의 범위를 나타낼 수 있습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/del" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/edits.html#the-del-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/del" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">33</th>
+                                <td class="ce ve">&lt;details&gt;</td>
+                                <td class="ve">사용자가 접고 펼치는 정보 공개 위젯을 만듭니다.  &lt;summary&gt;로 제목을 보여줄 수 있습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/details" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/details" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">34</th>
+                                <td class="ce ve">&lt;dfn&gt;</td>
+                                <td class="ve">부모 요소에 용어에 대한 설명이 있을 때, 새로운 용어를 정의하기 위해 사용합니다. &lt;title&gt; 속성에 용어의 약어를 입력할 수 있습니다. 기울임꼴로 렌더링됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/dfn" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-dfn-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/dfn" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">35</th>
+                                <td class="ce ve">&lt;dialog&gt;</td>
+                                <td class="ve">대화 상자 등의 상호작용 가능한 팝업 컴포넌트를 설정합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/dialog" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/dialog" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">36</th>
+                                <td class="ce ve">&lt;dir&gt;</td>
+                                <td class="ve">목록에 대한 컨테이너로 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dir" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/dir" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">37</th>
+                                <td class="ce ve">&lt;div&gt;</td>
+                                <td class="ve">의미를 갖지 않으며, 그룹화 등의 문서의 영역을 나누는 블록 성질의 컨테이너를 만듭니다. CSS를 설정하기 전에는 콘텐츠나 레이아웃에 어떤 영향도 주지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/div" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">38</th>
+                                <td class="ce ve">&lt;dl&gt;</td>
+                                <td class="ve">용어 또는 설명을 목록으로 정의할 때 사용합니다. 주로 용어사전, 메타데이터 표시에 사용됩니다. &lt;dt&gt;, &lt;dd&gt; 이외의 태그는 자식 요소로 올 수 없지만, &lt;dt&gt;, &lt;dd&gt;를 한 쌍으로 묶는 &lt;div&gt;는 예외적으로 올 수 있습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-dl-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/dl" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">39</th>
+                                <td class="ce ve">&lt;dt&gt;</td>
+                                <td class="ve">&lt;dl&gt; 안에서 용어의 제목을 표현합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-dt-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/dt" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">40</th>
+                                <td class="ce ve">&lt;em&gt;</td>
+                                <td class="ve">텍스트의 강세를 표현합니다. 구어체 강조 등의 문장의 의미를 변경하는데 사용됩니다. 기울임꼴로 렌더링됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/em" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">41</th>
+                                <td class="ce ve">&lt;embed&gt;</td>
+                                <td class="ve">외부 어플리케이션이나 대화형 컨텐츠를 포함시킬 수 있는 컨테이너를 만듭니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-embed-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/embed" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;">빈 요소</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">42</th>
+                                <td class="ce ve">&lt;fieldset&gt;</td>
+                                <td class="ve">&lt;fieldset&gt; 안에서 연관된 요소들을 하나의 그룹으로 묶어줍니다. 테두리 선이 렌더링 됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/fieldset" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">43</th>
+                                <td class="ce ve">&lt;figcaption&gt;</td>
+                                <td class="ve">&lt;figure&gt; 안에서 콘텐츠에 대한 제목 또는 설명을 표현합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-figcaption-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/figcaption" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">44</th>
+                                <td class="ce ve">&lt;figure&gt;</td>
+                                <td class="ve">삽화나 다이어그램, 사진 등의 독립적인 콘텐츠를 정의할 때 사용합니다. 문서의 내용과 연관성은 있지만 독립적인 콘텐츠이므로, 제거했을 때 문서의 흐름에 영향을 주지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-figure-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/figure" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">45</th>
+                                <td class="ce ve">&lt;font&gt;</td>
+                                <td class="ve">글자 크기, 색상, 종류를 정의할 때 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/font" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">46</th>
+                                <td class="ce ve">&lt;footer&gt;</td>
+                                <td class="ve">문서나 특정 섹션의 바닥글을 정의할 때 사용합니다. 구획의 작성자, 저작권 정보, 연락처, 사이트맵, 관련 문서, top 버튼 등의 정보를 담습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/sections.html#the-footer-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/footer" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">47</th>
+                                <td class="ce ve">&lt;form&gt;</td>
+                                <td class="ve">사용자로부터 정보를 입력 받아 제출하기 위한 대화형 컨트롤의 영역을 설정합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/forms.html#the-form-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/form" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">48</th>
+                                <td class="ce ve">&lt;frame&gt;</td>
+                                <td class="ve">다른 HTML 문서가 표시되는 특정 영역을 정의할 때 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frame" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/frame" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">49</th>
+                                <td class="ce ve">&lt;frameset&gt;</td>
+                                <td class="ve">&lt;frame&gt;들의 집합을 정의할 때 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frameset" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/frameset" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">50</th>
+                                <td class="ce ve">&lt;h1&gt;</td>
+                                <td class="ve">제목을 나타내는 요소로, 가장 높은 섹션 레벨 입니다. &lt;h1&gt; ~ &lt;h6&gt; 제목 별로 기본 폰트 크기가 다릅니다. &lt;h2&gt;부터는 문서 내에서 여러 번 정의할 수 있습니다. </td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/headings" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">51</th>
+                                <td class="ce ve">&lt;head&gt;</td>
+                                <td class="ve">문서의 정보(메타데이터)를 정의할 때 사용합니다. 문서의 제목, 스크립트, 스타일 시트 등을 포함합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/semantics.html#the-head-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/head" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">52</th>
+                                <td class="ce ve">&lt;header&gt;</td>
+                                <td class="ve">문서나 특정 섹션의 머리글을 정의할 때 사용합니다. 제목, 로고, 네비게이션, 검색 폼, 작성자 이름 등을 포함합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/sections.html#the-header-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/header" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">53</th>
+                                <td class="ce ve">&lt;hgroup&gt;</td>
+                                <td class="ve">제목 요소 및 관련 콘텐츠를 그룹화 합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/sections.html#the-hgroup-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">54</th>
+                                <td class="ce ve">&lt;hr&gt;</td>
+                                <td class="ve">문단 사이에 수평 가로선을 만들어 이야기 장면 전환, 구획 내 주제 변경 등을 표시합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/hr" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;">빈 요소</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">55</th>
+                                <td class="ce ve">&lt;html&gt;</td>
+                                <td class="ve">HTML 문서의 루트(최상단)요소를 나타내며, 브라우저에게 해당 문서가 HTML 문서임을 알려주는 역할을 합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/semantics.html#the-html-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/html" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">56</th>
+                                <td class="ce ve">&lt;i&gt;</td>
+                                <td class="ve">텍스트에서 다른 분위기로 주변 텍스트와 구분해야 하는 텍스트를 표시합니다. 전문용어나 다른 언어의 관용구, 문어체, 서양 문헌의 배 이름 등을 나타낼 때 사용됩니다. 기울임꼴로 표현됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-i-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/i" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">57</th>
+                                <td class="ce ve">&lt;iframe&gt;</td>
+                                <td class="ve">현재 문서 안에 다른 HTML 문서를 넣어서 보여줄 때 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/iframe" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">58</th>
+                                <td class="ce ve">&lt;image&gt;</td>
+                                <td class="ve">문서에 이미지를 넣을 때 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/image" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">59</th>
+                                <td class="ce ve">&lt;img&gt;</td>
+                                <td class="ve">&lt;img&gt;는 문서에 이미지를 삽입합니다. 링크 방식으로 이미지를 참조하는 것으로, src 속성과 alt 속성을 포함해야 합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/img" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;">빈 요소</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">60</th>
+                                <td class="ce ve">&lt;input&gt;</td>
+                                <td class="ve">&lt;form&gt; 안에서 사용자로부터 데이터를 입력 받을 수 있는 대화형 컨트롤 - 입력 필드를 생성합니다. &lt;label&gt;이 설정되어 있어야 합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/input.html#the-input-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/input" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;">빈 요소</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">61</th>
+                                <td class="ce ve">&lt;ins&gt;</td>
+                                <td class="ve">추가된 텍스트의 범위를 표현합니다. 앞에 &lt;del&gt;로 삭제된 텍스트의 범위를 나타냅니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/edits.html#the-ins-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/ins" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">62</th>
+                                <td class="ce ve">&lt;kbd&gt;</td>
+                                <td class="ve">키보드 입력을 나타내는 텍스트의 범위를 표시합니다. 텍스트 영역에 테두리가 렌더링됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-kbd-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/kbd" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">63</th>
+                                <td class="ce ve">&lt;keygen&gt;</td>
+                                <td class="ve">암호키를 생성하기 위해 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/keygen" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">64</th>
+                                <td class="ce ve">&lt;label&gt;</td>
+                                <td class="ve">사용자 인터페이스 - &lt;input&gt;의 제목을 설정합니다. for 속성을 사용하여 다른 요소와 연결할 수 있습니다. (for 속성 값 = 다른 요소의 id 값)</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/forms.html#the-label-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/label" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;">웹 접근성</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">65</th>
+                                <td class="ce ve">&lt;legend&gt;</td>
+                                <td class="ve">&lt;fieldset&gt; 안에서 콘텐츠의 설명을 표현합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/legend" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">66</th>
+                                <td class="ce ve">&lt;li&gt;</td>
+                                <td class="ve">목록의 항목을 표현합니다. 반드시 정렬(순서) 목록 &lt;ol&gt;, 비정렬(비순서) 목록 &lt;ul&gt;, 혹은 &lt;menu&gt; 안에 위치해야 합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-li-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/li" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">67</th>
+                                <td class="ce ve">&lt;link&gt;</td>
+                                <td class="ve">&lt;head&gt; 안에서 현재 문서와 외부 리소스를 연결할 때 사용합니다. 주로 외부 스타일 시트, 사이트 아이콘 등을 연결할 때 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/semantics.html#the-link-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/link" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;">빈 요소</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">68</th>
+                                <td class="ce ve">&lt;main&gt;</td>
+                                <td class="ve">문서(&lt;body&gt;)의 주요 콘텐츠를 표현합니다. 문서에서 한 번만 사용할 수 있고 전반적으로 반복되는 내용을 포함해서는 안 됩니다. &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;, &lt;header&gt;, &lt;nav&gt;의 자식 요소로 존재하면 안 됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/main" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">69</th>
+                                <td class="ce ve">&lt;map&gt;</td>
+                                <td class="ve">&lt;area&gt;와 함께, 클릭 가능한 링크 영역을 가지는 이미지 맵을 정의할 때 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/image-maps.html#the-map-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/map" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">70</th>
+                                <td class="ce ve">&lt;mark&gt;</td>
+                                <td class="ve">주의 깊게 볼 텍스트 부분에 강조 표시를 합니다. 텍스트 배경이 노란색으로 하이라이트된 형태로 렌더링됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/mark" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">71</th>
+                                <td class="ce ve">&lt;marquee&gt;</td>
+                                <td class="ve">텍스트의 스크롤 영역을 정의하는데 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/rendering.html#the-marquee-element-2" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">72</th>
+                                <td class="ce ve">&lt;menu&gt;</td>
+                                <td class="ve">메뉴 목록을 정의하는데 사용합니다. </td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-menu-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;">실험적</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">73</th>
+                                <td class="ce ve">&lt;menuitem&gt;</td>
+                                <td class="ve">팝업 메뉴를 설정할 때 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menuitem" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">74</th>
+                                <td class="ce ve">&lt;meta&gt;</td>
+                                <td class="ve">&lt;base&gt;, &lt;link&gt;, &lt;script&gt;, &lt;style&gt;, &lt;title&gt; 등의 웹 문서에 대한 정보 - 메타데이터를 설정합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/meta" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;">빈 요소</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">75</th>
+                                <td class="ce ve">&lt;meter&gt;</td>
+                                <td class="ve">특정 범위를 측정하는 게이지 값 또는 백분율 값을 표현합니다. 진행 정도를 나타낼 때는 &lt;progress&gt;를 사용해야 합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/form-elements.html#the-meter-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/meter" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">76</th>
+                                <td class="ce ve">&lt;nav&gt;</td>
+                                <td class="ve">HTML 문서 내의 메인 메뉴나 목차 등의 링크들을 정의할 때 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/sections.html#the-nav-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/nav" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">77</th>
+                                <td class="ce ve">&lt;nobr&gt;</td>
+                                <td class="ve">텍스트가 자동으로 줄바꿈되는 것을 방지하기 위해 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nobr" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">78</th>
+                                <td class="ce ve">&lt;noembed&gt;</td>
+                                <td class="ve">요소 또는 콘텐츠 유형을 지원하지 않는 브라우저에 대체 메세지를 제공하기 위해 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noembed" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">79</th>
+                                <td class="ce ve">&lt;noframes&gt;</td>
+                                <td class="ve">프레임을 지원하지 않는 브라우저에 대체 메세지를 제공하기 위해 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noframes" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/noframes" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">80</th>
+                                <td class="ce ve">&lt;noscript&gt;</td>
+                                <td class="ve">브라우저가 스크립트 유형을 지원하지 않거나, 스크립트를 비활성화한 경우에 보여줄 대체 콘텐츠를 정의하기 위해 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/noscript" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">81</th>
+                                <td class="ce ve">&lt;object&gt;</td>
+                                <td class="ve">외부 리소스에 따라 문서 내의 처리 방식을 변경할 수 있는 임베디드 객체 - 멀티 미디어 요소를 정의할 때 사용합니다. &lt;body&gt; 안에 설정하며, data 속성이나 type 속성 중 하나를 입력해야 합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-object-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/object" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">82</th>
+                                <td class="ce ve">&lt;ol&gt;</td>
+                                <td class="ve">순서가 있는 - 정렬된 목록을 정의할 때 사용합니다. 숫자 목록으로 렌더링됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-ol-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/ol" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">83</th>
+                                <td class="ce ve">&lt;optgroup&gt;</td>
+                                <td class="ve">&lt;select&gt;의 &lt;option&gt; 목록을 그룹화 합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/optgroup" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">84</th>
+                                <td class="ce ve">&lt;option&gt;</td>
+                                <td class="ve">&lt;select&gt;, &lt;optgroup&gt;, &lt;datalist&gt;의 목록에서 하나의 항목을 정의합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/option" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">85</th>
+                                <td class="ce ve">&lt;output&gt;</td>
+                                <td class="ve">스크립트에 의한 계산 또는 사용자의 조작 결과를 나타낼 때 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/form-elements.html#the-output-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/output" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">86</th>
+                                <td class="ce ve">&lt;p&gt;</td>
+                                <td class="ve">하나의 문단을 정의합니다. &lt;p&gt;의 상하부에 자동으로 약간의 여백이 생깁니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-p-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/p" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">87</th>
+                                <td class="ce ve">&lt;param&gt;</td>
+                                <td class="ve">&lt;object&gt;의 매개변수를 정의할 때 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/param" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">88</th>
+                                <td class="ce ve">&lt;picture&gt;</td>
+                                <td class="ve">뷰포트의 너비에 따라 이미지가 알맞게 채워질 수 있도록 여러 대체 이미지를 중에서 하나를 선택해줍니다. 0개 이상의 &lt;source&gt;, 하나의 &lt;img&gt;로 구성됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/picture" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;">반응형</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">89</th>
+                                <td class="ce ve">&lt;plaintext&gt;</td>
+                                <td class="ve">시작 태그 뒤에 오는 모든 것을 원시 텍스트로 렌더링하기 위해 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/plaintext" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">90</th>
+                                <td class="ce ve">&lt;portal&gt;</td>
+                                <td class="ve">새 페이지를 보다 원활하게 탐색할 수 있도록, 다른 HTML 페이지를 현재 페이지에 포함시킵니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/portal" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;">실험적</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">91</th>
+                                <td class="ce ve">&lt;pre&gt;</td>
+                                <td class="ve">작성한 텍스트의 서식이 그대로 렌더링됩니다. 소스 코드를 보여줄 때 자주 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-pre-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/pre" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">92</th>
+                                <td class="ce ve">&lt;progress&gt;</td>
+                                <td class="ve">작업의 진행률을 나타낼 때 사용합니다. &lt;label&gt;을 통해 제목을 표현하며, 범위나 영역을 나타낼 때는 &lt;meter&gt;를 사용해야 합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/form-elements.html#the-progress-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/progress" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">93</th>
+                                <td class="ce ve">&lt;q&gt;</td>
+                                <td class="ve">짧은 인용문이라는 것을 표시합니다. 텍스트가 따옴표로 묶여서 기울임꼴로 렌더링됩니다. 출처는 cite 속성으로 표시할 수 있습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-q-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/q" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">94</th>
+                                <td class="ce ve">&lt;rb&gt;</td>
+                                <td class="ve">&lt;ruby&gt; 주석을 적용하려는 텍스트를 구분할 때 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rb" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">95</th>
+                                <td class="ce ve">&lt;rp&gt;</td>
+                                <td class="ve">&lt;ruby&gt; 주석을 지원하지 않는 경우, 괄호를 보여주기 위해 사용합니다. 여는 괄호와 닫는 괄호를 둘러싸야 합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rp" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-rp-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/rp" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">96</th>
+                                <td class="ce ve">&lt;rt&gt;</td>
+                                <td class="ve">&lt;ruby&gt; 주석에서 발음, 번역, 설명 등을 나타내는 윗첨자를 정의할 때 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rt" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-rt-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/rt" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">97</th>
+                                <td class="ce ve">&lt;rtc&gt;</td>
+                                <td class="ve">&lt;rb&gt;의 컨테이너로 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rtc" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">98</th>
+                                <td class="ce ve">&lt;ruby&gt;</td>
+                                <td class="ve">동아시아 문자의 발음이나 설명을 윗첨자로 표기하는 루비 주석을 정의할 때 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-ruby-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/ruby" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">99</th>
+                                <td class="ce ve">&lt;s&gt;</td>
+                                <td class="ve">더 이상 관련이 없거나 정확하지 않은 텍스트에 취소선을 설정합니다. 텍스트 가운데로 가로선이 렌더링됩니다. 삭제된 텍스트를 표현할 때는 &lt;del&gt;을 사용해야 합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-s-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/s" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">100</th>
+                                <td class="ce ve">&lt;samp&gt;</td>
+                                <td class="ve">컴퓨터 프로그램 출력의 예시 또는 인용문을 표현합니다. 스크립트의 결과를 나타낼 때 사용하며, 모노 타입의 기본 글꼴로 렌더링됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-samp-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/samp" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">101</th>
+                                <td class="ce ve">&lt;script&gt;</td>
+                                <td class="ve">데이터 및 실행 가능한 코드를 문서에 포함하거나 외부 스크립트를 연결할 때 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/scripting.html#the-script-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/script" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">102</th>
+                                <td class="ce ve">&lt;section&gt;</td>
+                                <td class="ve">맥락이 같은 요소들을 주제별로 그룹화 합니다. 적절한 의미를 갖는 컨테이너 요소가 없을 때 사용하며, 제목 요소를 포함해야 합니다. &lt;nav&gt;,  &lt;article&gt;,  &lt;aside&gt;,  &lt;main&gt; 등의 컨테이너 요소를 선택하는 것이 적절하다면, 해당 요소를 사용해야 합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/sections.html#the-section-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/section" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">103</th>
+                                <td class="ce ve">&lt;select&gt;</td>
+                                <td class="ve">옵션 메뉴를 제공하는 드롭다운 목록을 나타낼 때 사용합니다. &lt;label&gt;의 for 속성값과 &lt;select&gt;의 id 값이 일치해야 합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/select" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">104</th>
+                                <td class="ce ve">&lt;shadow&gt;</td>
+                                <td class="ve">Shadow DOM 을 나타내기 위해 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/shadow" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">105</th>
+                                <td class="ce ve">&lt;slot&gt;</td>
+                                <td class="ve">특정 컴포넌트에 등록한 하위 컴포넌트의 마크업을 확장하거나 재정의할 때 사용합니다. name 속성으로 구분하여 여러 개의 &lt;slot&gt;을 사용할 수 있습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/scripting.html#the-slot-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">106</th>
+                                <td class="ce ve">&lt;small&gt;</td>
+                                <td class="ve">덧붙이는 글, 저작권, 법률 표기 등의 보조 주석 등의 작은 텍스트를 표현합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-small-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/small" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">107</th>
+                                <td class="ce ve">&lt;source&gt;</td>
+                                <td class="ve">&lt;audio&gt;, &lt;video&gt;, &lt;picture&gt;에서 다중 미디어 지원을 정의할 때 사용합니다. 브라우저가 선택할 수 있는 대체 미디어 콘텐츠를 설정합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/source" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;">빈 요소</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">108</th>
+                                <td class="ce ve">&lt;spacer&gt;</td>
+                                <td class="ve">페이지에 빈 공간을 나타낼 때 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/spacer" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">109</th>
+                                <td class="ce ve">&lt;span&gt;</td>
+                                <td class="ve">의미를 갖지 않으며, 그룹화 또는 속성 값을 공유하는 인라인 성질의 컨테이너를 만듭니다. CSS를 설정하기 전에는 콘텐츠나 레이아웃에 어떤 영향도 주지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-span-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/span" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">110</th>
+                                <td class="ce ve">&lt;strike&gt;</td>
+                                <td class="ve">텍스트 위에 취소선(가로선)을 표현할 떄 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/strike" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">111</th>
+                                <td class="ce ve">&lt;strong&gt;</td>
+                                <td class="ve">콘텐츠에서 중대하거나 긴급한 의미의 텍스트임을 강조하기 위해 사용합니다. 보통 굵은 글씨로 렌더링됩니다. &lt;b&gt;는 텍스트 자체에 주의를 끌기 위해 사용됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/strong" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">112</th>
+                                <td class="ce ve">&lt;style&gt;</td>
+                                <td class="ve">문서나 문서 일부에 대한 스타일 정보를 정의할 때 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/semantics.html#the-style-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/style" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">113</th>
+                                <td class="ce ve">&lt;sub&gt;</td>
+                                <td class="ve">텍스트를 아래 첨자로 표시하기 위해 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-sub-and-sup-elements" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/sub" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">114</th>
+                                <td class="ce ve">&lt;summary&gt;</td>
+                                <td class="ve">&lt;details&gt;의 공개 상자에 대한 제목을 설정합니다. &lt;summary&gt;는 &lt;details&gt;의 바로 아래에 위치해야 하며, &lt;summary&gt;의 제목 텍스트를 누르면 &lt;details&gt;의 상자가 열리거나 닫힙니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/interactive-elements.html#the-summary-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/summary" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">115</th>
+                                <td class="ce ve">&lt;sup&gt;</td>
+                                <td class="ve">텍스트를 위 첨자로 표시하기 위해 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-sub-and-sup-elements" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/sup" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">116</th>
+                                <td class="ce ve">&lt;table&gt;</td>
+                                <td class="ve">행과 열로 이루어진 표를 정의할 때 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/tables.html#the-table-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/table" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">117</th>
+                                <td class="ce ve">&lt;tbody&gt;</td>
+                                <td class="ve">표의 여러 행&lt;tr&gt;을 그룹화하여 표의 본문을 구성합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/tables.html#the-tbody-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/tbody" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">118</th>
+                                <td class="ce ve">&lt;td&gt;</td>
+                                <td class="ve">표에서 하나의 데이터 셀을 정의합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/tables.html#the-td-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/td" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">119</th>
+                                <td class="ce ve">&lt;template&gt;</td>
+                                <td class="ve">추가 또는 복사될 수 있는 HTML 요소들을 정의할 때 사용합니다. 페이지 로딩 시 즉시 렌더링 되지 않고, JavaScript로 해당 콘텐츠를 복제한 후 렌더링되도록 할 수 있습니다. 콘텐츠 조각을 나중에 사용하기 위해 담아놓는 컨테이너라고 할 수 있습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/scripting.html#the-template-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/template" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">120</th>
+                                <td class="ce ve">&lt;textarea&gt;</td>
+                                <td class="ve">여러 줄의 텍스트를 입력하는 텍스트 입력 영역을 정의합니다. cols 속성과 rows 속성으로 영역의 크기를 조절할 수 있고, maxlength 속성으로 입력 문자수를 설정할 수 있습니다. placeholder 속성을 사용하면 무엇을 입력할 수 있는지에 대한 힌트 글자를 보여줄 수 있습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/rendering.html#the-textarea-element-2" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/textarea" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">121</th>
+                                <td class="ce ve">&lt;tfoot&gt;</td>
+                                <td class="ve">표에서 푸터 콘텐츠들을 그룹화할 때 사용합니다. 이를 이용해 표의 내용 부분만 스크롤 되게 할 수 있습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/tables.html#the-tfoot-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/tfoot" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">122</th>
+                                <td class="ce ve">&lt;th&gt;</td>
+                                <td class="ve">표의 행 또는 열에서 제목이 되는 헤더 셀을 정의할 때 사용합니다. 굵은 글자로 렌더링됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/tables.html#the-th-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/th" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">123</th>
+                                <td class="ce ve">&lt;thead&gt;</td>
+                                <td class="ve">표에서 헤더 콘텐츠들을 그룹화할 때 사용합니다. 이를 이용해 표의 내용 부분만 스크롤 되게 할 수 있습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/tables.html#the-thead-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/thead" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">124</th>
+                                <td class="ce ve">&lt;time&gt;</td>
+                                <td class="ve">날짜와 시간 데이터를 정의할 때 사용합니다. datetime 속성의 값을 지정해 적절한 검색 결과, 알림 같은 특정 기능을 구현할 수 있습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/time" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">125</th>
+                                <td class="ce ve">&lt;title&gt;</td>
+                                <td class="ve">브라우저의 제목 표시줄이나 페이지 탭에 보이는 문서의 제목을 정의합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/semantics.html#the-title-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/title" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★★</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">126</th>
+                                <td class="ce ve">&lt;tr&gt;</td>
+                                <td class="ve">표의 행을 정의합니다. &lt;th&gt;, &lt;td&gt;를 포함합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/tables.html#the-tr-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/tr" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">127</th>
+                                <td class="ce ve">&lt;track&gt;</td>
+                                <td class="ve">&lt;video&gt;, &lt;audio&gt; 안에서 자막 등 시간별 텍스트 트랙(시간 기반 데이터)를 정의할 때 사용합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/media.html#the-track-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/track" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">128</th>
+                                <td class="ce ve">&lt;tt&gt;</td>
+                                <td class="ve">기본 고정폭 글꼴로 표시되는 텍스트를 만들 때 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tt" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/tt" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">129</th>
+                                <td class="ce ve">&lt;u&gt;</td>
+                                <td class="ve">철자 오류 및 주석 표시를 위해 사용합니다. 빨간 물결 밑줄로 렌더링됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-u-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/u" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">130</th>
+                                <td class="ce ve">&lt;ul&gt;</td>
+                                <td class="ve">순서가 없는 - 비정렬 목록을 표시합니다. 보통 글머리 기호 목록으로 렌더링됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/ul" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★★☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">131</th>
+                                <td class="ce ve">&lt;var&gt;</td>
+                                <td class="ve">수학 표현 또는 프로그래밍에서 변수의 이름을 나타낼 때 사용합니다. 보통 기울임꼴로 렌더링됩니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-var-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/var" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">132</th>
+                                <td class="ce ve">&lt;video&gt;</td>
+                                <td class="ve">비디오 재생을 지원하는 미디어 플레이어를 문서에 삽입합니다. &lt;source&gt;로 영상 파일을 불러옵니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/media.html#the-video-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/video" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★★★☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">133</th>
+                                <td class="ce ve">&lt;wbr&gt;</td>
+                                <td class="ve">무의미하거나 해석이 불가능한 텍스트를 대상으로, 브라우저가 줄을 바꿀 수 있는 위치를 지정합니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-wbr-element" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="http://www.tcpschool.com/html-tags/wbr" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve" style="font-size: 10px;">★☆☆☆☆</td>
+                                <td class="ce ve" style="font-size: 12px;">빈 요소</td>
+                            </tr>
+                            <tr>
+                                <th class="ce ve" scope="row" style="font-size: 10px;">134</th>
+                                <td class="ce ve">&lt;xmp&gt;</td>
+                                <td class="ve">고정 폭 글꼴을 사용하여 텍스트를 렌더링할 때 사용되었습니다. 현재는 사용하지 않습니다.</td>
+                                <td class="ce ve"><a style="font-size: 13px;" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp" target="_blank" rel="noopener noreferrer">Go</a></td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve">.</td>
+                                <td class="ce ve" style="font-size: 12px;"></td>
+                                <td class="ce ve"><span class="material-symbols-outlined" title="현재는 사용하지 않습니다.">delete</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- //t_table -->
+                </div>
+                <!-- //t_content -->
+            </div>
+            <!-- //document_html -->
+        </div>
+        <!-- //main_refer -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <a href="mailto:oranssy@daum.net">oranssy@daum.net</a>
+    </footer>
+    <!-- //footer -->
+
+    <!-- 코드 블럭 (하이라이트) -->
+    <script src="assets/js/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+</html>

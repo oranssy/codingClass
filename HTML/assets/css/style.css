@@ -30,16 +30,16 @@ body {
 .header_right {
     padding-top: 1%;
 }
-.header_right span:nth-child(1) {
+.header_right .header_sub1 {
     color: #3333337b;
     font-weight: 500;
     margin-right: 2.4vw;
 }
-.header_right span:nth-child(2) a {
+.header_right .header_sub2 a {
     font-size: 14px;
     color: #333333;
 }
-.header_right span:nth-child(2):hover a {
+.header_right .header_sub2:hover a {
     color: #000000;
     text-decoration: #9099edda wavy underline;
     text-underline-position: under;

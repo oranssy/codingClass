@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 요소 비교 | oranssy</title>
+
+    <!-- meta tags -->
+    <meta name="Generator" content="Visual Studio Code">
+    <meta name="Subject" content="HTML Basic Reference">
+    <meta name="Title" content="HTML Basic Reference _oranssy">
+    <meta name="Author" content="오란씨">
+    <meta name="Description" content="프론트엔드 개발자를 목표로 하는 오란씨의 HTML 참고자료 입니다.">
+    <meta name="Keywords" content="HTML, html5, 개념, 자료, reference, publisher, frontend">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="텍스트 요소 비교 | oranssy">
+    <meta property="og:type" content="reference">
+    <meta property="og:image" content="https://oranssy.github.io/codingClass/img/basic/cat_oran__1080.jpg">
+    <meta property="og:description" content="코딩 공부 _HTML 참고자료입니다.">
+    <meta property="og:url" content="https://oranssy.github.io/codingClass/HTML/textElements.html">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/studyHTML_16x16.ico">
+    <link rel="icon" href="assets/img/studyHTML_16x16.ico" sizes="16x16">
+    <link rel="icon" href="assets/img/studyHTML_32x32.ico" sizes="32x32">
+    <link rel="icon" href="assets/img/studyHTML_48x48.ico" sizes="48x48">
+    <link rel="icon" href="assets/img/studyHTML_64x64.ico" sizes="64x64">
+    <link rel="icon" href="assets/img/studyHTML_128x128.ico" sizes="128x128">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/resets.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dracula.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1><a href="#">HTML 문서에 대해서 알아봅시다.</a></h1>
+        <div class="header_right">
+            <span class="header_sub2"><a href="https://oranssy.tistory.com/" target="_blank" rel="noopener noreferrer">작성자 : oranssy</a></span>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <div class="main_header">
+            <h2>HTML <em>레퍼런스 북</em></h2>
+        </div>
+        <!-- //main_header -->
+
+        <nav class="main_menu">
+            <ul>
+                <li><a href="00html_refer_T.html" style="background-color: #afafaf; padding: 0.25% 0.45%; margin-bottom: 0.2%;">참고한 선생님 디자인</a></li>
+            </ul>
+            <ul>
+                <li><a href="htmlBasic.html">기본 개념</a></li>
+                <li><a href="w3c.html">웹 표준 / 웹 접근성 / 웹 호환성</a></li>
+                <li><a href="semanticMarkup.html">시멘틱 마크업</a></li>
+                <li><a href="htmlAlphabet.html">HTML 요소 참고서</a></li>
+            </ul>
+            <ul>
+                <li><a href="groupElements.html">그룹화 요소 비교</a></li>
+                <li class="active"><a href="textElements.html">텍스트 요소 비교</a></li>
+            </ul>
+        </nav>
+        <!-- //main_menu -->
+
+        <div class="main_refer">
+            <div class="document_html">
+                <h2 class="t_subject">⭐️ 텍스트 요소 비교 ⭐️</h2>
+                <div class="t_content">
+                    <h3 class="t_cont_tit"><span class="t_cont_num">01.</span>텍스트 요소의 종류</h3>
+                    <p class="t_cont_desc">
+                        HTML (HyperText Markup Language) 은 <i>웹 페이지의 형태를 기술하기 위한 마크업 언어</i>를 의미합니다. <br>
+                        웹의 기초적인 구성 요소로, <i>웹 페이지의 구조와 콘텐츠의 의미를 정의</i>합니다.
+                    </p>
+                    <div class="t_content2">
+                        <table class="t_table">
+                            <caption>텍스트 요소의 종류</caption>
+                            <colgroup>
+                                <col style="width: 12%;">
+                                <col>
+                                <col style="width: 20%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">요소</th>
+                                    <th scope="col">설명</th>
+                                    <th scope="col">렌더링</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="ce ve" scope="row">&lt; strong &gt;</th>
+                                    <td class="ve">중대하거나 긴급한 의미의 텍스트임을 강조하기 위해 사용합니다.</td>
+                                    <td class="ce ve">굵은 글씨체</td>
+                                </tr>
+                                <tr>
+                                    <th class="ce ve" scope="row">&lt; b &gt;</th>
+                                    <td class="ve">특별한 의미 없이, 단순히 다른 텍스트와의 구별 및 텍스트 자체에 주의를 끌기 위해 사용합니다.</td>
+                                    <td class="ce ve">굵은 글씨체</td>
+                                </tr>
+                                <tr>
+                                    <th class="ce ve" scope="row">&lt; em &gt;</th>
+                                    <td class="ve">텍스트의 강세를 나타내며, 구어체 강조 등으로 문장의 의미를 변경하기 위해 사용합니다.</td>
+                                    <td class="ce ve">기울임꼴</td>
+                                </tr>
+
+                                <tr>
+                                    <th class="ce ve" scope="row">&lt; mark &gt;</th>
+                                    <td class="ve">주의 깊게 볼 텍스트임을 강조하기 위해 사용합니다.</td>
+                                    <td class="ce ve">텍스트 배경 노랑 (하이라이트)</td>
+                                </tr>
+                                <tr>
+                                    <th class="ce ve" scope="row">&lt; small &gt;</th>
+                                    <td class="ve">덧붙이는 글, 저작권, 법률 표기, 주의사항 등의 보조 주석을 표현하기 위해 사용합니다.</td>
+                                    <td class="ce ve">일반 텍스트보다 2포인트 정도 작은 텍스트</td>
+                                </tr>
+                                <tr>
+                                    <th class="ce ve" scope="row">&lt; sup &gt;</th>
+                                    <td class="ve">위 첨자 텍스트를 표시하기 위해 사용합니다.</td>
+                                    <td class="ce ve"></td>
+                                </tr>
+                                <tr>
+                                    <th class="ce ve" scope="row">&lt; sub &gt;</th>
+                                    <td class="ve">아래 첨자 텍스트를 표시하기 위해 사용합니다.</td>
+                                    <td class="ce ve"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- //t_table -->
+                    </div>
+                    <!-- //t_content2 -->
+                    <div class="t_ex_box">
+                        <span class="t_link_tit"><em>HTML 요소 참고서</em> 바로가기 &nbsp; ☛</span>
+                        <a class="t_link_desc" href="https://oranssy.github.io/codingClass/HTML/htmlAlphabet.html" target="_blank" rel="noopener noreferrer">
+                            https://oranssy.github.io/codingClass/HTML/htmlAlphabet.html
+                        </a>
+                    </div>
+                    <!-- //t_ex_box -->
+                </div>
+                <!-- //t_content -->
+
+                <div class="t_content">
+                    <h3 class="t_cont_tit"><span class="t_cont_num">02.</span>텍스트 요소 비교해보기</h3>
+                    <div class="t_content2">
+                        <div class="t_iframe">
+                            <iframe title="TextElements_compare" src="https://codepen.io/oranssy/embed/OJoXydN?default-tab=html%2Cresult&theme-id=dark"></iframe>
+                        </div>
+                        <!-- //t_iframe -->
+                    </div>
+                    <!-- //t_content2 -->
+                </div>
+                <!-- //t_content -->
+            </div>
+            <!-- //document_html -->
+        </div>
+        <!-- //main_refer -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <a href="mailto:oranssy@daum.net">oranssy@daum.net</a>
+    </footer>
+    <!-- //footer -->
+
+    <!-- 코드 블럭 (하이라이트) -->
+    <script src="assets/js/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+</html>

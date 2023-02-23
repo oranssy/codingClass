@@ -17,9 +17,9 @@
     <!-- Open Graph -->
     <meta property="og:title" content="그룹화 요소 비교 | oranssy">
     <meta property="og:type" content="reference">
-    <meta property="og:image" content="https:https://oranssy.github.io/codingClass/img/basic/cat_oran__1080.jpg">
+    <meta property="og:image" content="https://oranssy.github.io/codingClass/img/basic/cat_oran__1080.jpg">
     <meta property="og:description" content="코딩 공부 _HTML 참고자료입니다.">
-    <meta property="og:url" content="https://">
+    <meta property="og:url" content="https://oranssy.github.io/codingClass/HTML/groupElements.html">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/img/studyHTML_16x16.ico">
@@ -63,7 +63,7 @@
             </ul>
             <ul>
                 <li class="active"><a href="groupElements.html">그룹화 요소 비교</a></li>
-                <li><a href="#">레이아웃02</a></li>
+                <li><a href="textElements.html">텍스트 요소 비교</a></li>
             </ul>
         </nav>
         <!-- //main_menu -->
@@ -139,7 +139,7 @@
                         <p class="t_cont_desc2">
                             HTML 문서 내에서 <i>독립적으로 배포</i>하거나 <i>재사용</i>할 수 있는 콘텐츠 내용을 그룹화합니다. <br>
                             <i>제목 요소를 포함</i>해야 합니다. <br>
-                            게시물, 뉴스 기사, 블로그 포스팅 등의 내용을 다룹니다.
+                            게시글, 뉴스 기사, 블로그 포스팅 등의 내용을 다룹니다.
                         </p>
                     </div>
                     <!-- //t_content2 -->
@@ -158,14 +158,14 @@
                     <div class="t_content2">
                         <h4 class="t_cont_tit2"><span class="t_cont_num2">7</span>&lt; div &gt;</h4>
                         <p class="t_cont_desc2">
-                            <i>의미를 갖지 않으며</i>, 그룹화 등의 문서의 영역을 나누는 <i>블록 성질의 컨테이너</i>를 만듭니다. <br>
+                            <i>의미를 갖지 않으며</i>, 그룹화 등의 문서의 영역을 나누는 <i>블록 성질의 컨테이너</i>를 만듭니다. ( = 줄 바뀜 ) <br>
                             CSS를 설정하기 전에는 콘텐츠나 레이아웃에 어떤 영향도 주지 않습니다.
                         </p>
                     </div>
                     <!-- //t_content2 -->                    <div class="t_content2">
                         <h4 class="t_cont_tit2"><span class="t_cont_num2">8</span>&lt; span &gt;</h4>
                         <p class="t_cont_desc2">
-                            <i>의미를 갖지 않으며</i>, 그룹화 또는 속성 값을 공유하는 <i>인라인 성질의 컨테이너</i>를 만듭니다. <br>
+                            <i>의미를 갖지 않으며</i>, 그룹화 또는 속성 값을 공유하는 <i>인라인 성질의 컨테이너</i>를 만듭니다. ( = 한 줄에 표시 ) <br>
                             CSS를 설정하기 전에는 콘텐츠나 레이아웃에 어떤 영향도 주지 않습니다.
                         </p>
                         <div class="t_iframe">
@@ -191,51 +191,171 @@
 
                 <div class="t_content">
                     <h3 class="t_cont_tit"><span class="t_cont_num">03.</span>&lt; section &gt;, &lt; article &gt;, &lt; div &gt;, &lt; span &gt; 비교</h3>
-                    <p class="t_cont_desc">                        
-                        시멘틱 마크업을 위해서는 <i>같은 맥락의 요소들을 묶어서</i> 논리적인 순서를 갖는 중첩 구조를 만드는 것이 중요합니다. <br>
-                        마크업에서 그룹화가 제대로 이루어져야 CSS 를 이용한 레이아웃 작업이 수월해집니다.
-                    </p>
-                    <table class="t_table">
-                        <caption>section, article, div, span 요소 비교</caption>
-                        <colgroup>
-                            <col style="width: 12%;">
-                            <col style="width: 22%;">
-                            <col style="width: 22%;">
-                            <col style="width: 22%;">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">&lt; section &gt;</th>
-                                <th scope="col">&lt; article &gt;</th>
-                                <th scope="col">&lt; div &gt;</th>
-                                <th scope="col">&lt; span &gt;</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th class="ce ve" scope="row">의미</th>
-                                <td class="ce ve">부분, 구획, 마디</td>
-                                <td class="ce ve">기사, 논설, 논문</td>
-                                <td class="ce ve" colspan="2">없 음</td>
-                            </tr>
-                            <tr>
-                                <th class="ce ve" scope="row">다루는 주제</th>
-                                <td class="ce ve">하나의 일반적인 주제로 묶을 수 있는, 맥락이 같은 요소들</td>
-                                <td class="ce ve">독립적으로 배포하거나 재사용할 수 있는 내용의 요소들</td>
-                                <td class="ce ve"></td>
-                                <td class="ce ve"></td>
-                            </tr>
-                            <tr>
-                                <th class="ce ve" scope="row">주제 예시</th>
-                                <td class="ce ve">검색 결과, 지도 표시 등</td>
-                                <td class="ce ve">게시물, 뉴스 기사, 블로그 포스팅 등</td>
-                                <td class="ce ve"></td>
-                                <td class="ce ve"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- //t_table -->
+                    <div class="t_content2">
+                        <table class="t_table">
+                            <caption>section, article, div, span 요소 비교</caption>
+                            <colgroup>
+                                <col style="width: 12%;">
+                                <col style="width: 22%;">
+                                <col style="width: 22%;">
+                                <col style="width: 22%;">
+                                <col style="width: 22%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">&lt; section &gt;</th>
+                                    <th scope="col">&lt; article &gt;</th>
+                                    <th scope="col">&lt; div &gt;</th>
+                                    <th scope="col">&lt; span &gt;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="ce ve" scope="row">의미</th>
+                                    <td class="ce ve">부분, 구획, 마디</td>
+                                    <td class="ce ve">기사, 논설, 논문</td>
+                                    <td class="ce ve" colspan="2">없 음</td>
+                                </tr>
+                                <tr>
+                                    <th class="ce ve" scope="row">성질</th>
+                                    <td class="ce ve">블록</td>
+                                    <td class="ce ve">블록</td>
+                                    <td class="ce ve">블록</td>
+                                    <td class="ce ve">인라인</td>
+                                </tr>
+                                <tr>
+                                    <th class="ce ve" scope="row">영역 안의 내용</th>
+                                    <td class="ce ve">하나의 일반적인 주제로 묶을 수 있는, 맥락이 같은 요소들</td>
+                                    <td class="ce ve">독립적으로 배포하거나 재사용할 수 있는 내용</td>
+                                    <td class="ce ve" colspan="2">의미가 없기 때문에 어떤 주제의 내용이든 사용</td>
+                                </tr>
+                                <tr>
+                                    <th class="ce ve" scope="row">내용 예시</th>
+                                    <td class="ce ve">게시글1, 게시글2, 게시글3을 하나로 묶을 수 있는 제목을 가진 컨테이너</td>
+                                    <td class="ce ve">게시글, 뉴스 기사, 블로그 글, 댓글 등</td>
+                                    <td class="ce ve">요소들을 블록 성질을 갖는 영역으로 만들고, CSS로 디자인을 표현</td>
+                                    <td class="ce ve">제목 앞에 오는 숫자에 CSS로 디자인을 표현</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- //t_table -->
+                        <div class="t_example">
+                            <details>
+                                <summary><h5 class="t_ex_tit">코드 예시</h5></summary>
+                                <div class="t_ex_sub">
+                                    <h6 class="t_ex_subTit"><span class="t_ex_num">1</span>&lt; section &gt;</h6>
+                                    <div class="t_code">
+<pre><code class="language-html">&lt;section id="koreanDogs"&gt;
+    &lt;h2&gt;한국의 토종견&lt;/h2&gt;
+    &lt;p&gt;한국의 대표적인 토종견입니다.&lt;/p&gt;
+        &lt;article&gt;
+            &lt;h3&gt;삽살개&lt;/h3&gt;
+            &lt;p&gt;털이 길게 자라서 얼굴 주변을 덮고 있습니다.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;article&gt;
+            &lt;h3&gt;진돗개&lt;/h3&gt;
+            &lt;p&gt;얼굴에 부드러운 털이 빽빽하고 꼬리의 털은 약간 깁니다.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;article&gt;
+            &lt;h3&gt;풍산개&lt;/h3&gt;
+            &lt;p&gt;진돗개보다 덩치가 좀더 크고 만졌을 때 북슬한 느낌이 듭니다.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;article&gt;
+            &lt;h3&gt;동경이&lt;/h3&gt;
+            &lt;p&gt;꼬리가 퇴화되어 몽똑하거나 없는 것처럼 보입니다.&lt;/p&gt;
+        &lt;/article&gt;
+&lt;/section&gt;  
+</code></pre>
+                                    </div>
+                                    <!-- //t_code -->
+                                    <div class="t_desc_refer">
+                                        <h6 class="t_refer_tit">참고하기</h6>
+                                        <p class="t_refer_desc">&lt; section &gt; 안에 &lt; article &gt; 가 포함될 수도 있고, &lt; article &gt; 안에 &lt; section &gt; 이 포함될 수도 있습니다.</p>
+                                    </div>
+                                    <!-- //t_desc_refer -->
+                                </div>
+                                <!-- //t_ex_sub -->
+                                <div class="t_ex_sub">
+                                    <h6 class="t_ex_subTit"><span class="t_ex_num">2</span>&lt; article &gt;</h6>
+                                    <div class="t_code">
+<pre><code class="language-html">&lt;article class="pets"&gt;
+    &lt;h3&gt;반려동물의 특징&lt;/h3&gt;
+        &lt;section&gt;
+            &lt;h4&gt;강아지&lt;/h4&gt;
+            &lt;p&gt;댕댕이라고도 부릅니다.&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;section&gt;
+            &lt;h4&gt;고양이&lt;/h4&gt;
+            &lt;p&gt;냥냥이라고도 부릅니다.&lt;/p&gt;
+        &lt;/section&gt;
+&lt;/article&gt;
+</code></pre>
+                                    </div>
+                                    <!-- //t_code -->
+                                </div>
+                                <!-- //t_ex_sub -->
+                                <div class="t_ex_sub">
+                                    <h6 class="t_ex_subTit"><span class="t_ex_num">3</span>&lt; div &gt;</h6>
+                                    <div class="t_code">
+<pre><code class="language-html">&lt;div class="container"&gt;
+    &lt;section&gt;
+        &lt;h2&gt;반려동물&lt;/h2&gt;
+        &lt;article&gt;
+            &lt;h3&gt;반려동물의 의미&lt;/h3&gt;
+            &lt;p&gt;반려동물이란, 애완동물을 반려자로서 아껴준다는 의미입니다.&lt;/p&gt;
+            &lt;div class="img_card"&gt;
+                &lt;a href="#"&gt;&lt;img src="assets/img/cat&dog.png" alt="고양이와 개"&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/article&gt;
+        &lt;article&gt;
+            &lt;h3&gt;반려동물의 역사&lt;/h3&gt;
+            &lt;p&gt;17세기부터 반려동물에 대한 사회적 인식이 긍정적으로 평가되었습니다.&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
+</code></pre>
+                                    </div>
+                                    <!-- //t_code -->
+                                </div>
+                                <!-- //t_ex_sub -->
+                                <div class="t_ex_sub">
+                                    <h6 class="t_ex_subTit"><span class="t_ex_num">4</span>&lt; span &gt;</h6>
+                                    <div class="t_code">
+<pre><code class="language-html">&lt;section&gt;
+    &lt;h2&gt;강아지와의 놀이방법&lt;/h2&gt;
+    &lt;article&gt;
+        &lt;h3&gt;&lt;span class="number"&gt;01&lt;/span&gt;노즈워크&lt;/h3&gt;
+        &lt;p&gt;좋아하는 간식이나 장난감을 숨긴 뒤, 후각을 이용해 찾아내는 놀이 활동입니다.&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;article&gt;
+        &lt;h3&gt;&lt;span class="number"&gt;02&lt;/span&gt;터그&lt;/h3&gt;
+        &lt;p&gt;반려견이 물고 있는 것을 반대쪽에서 잡고 당기거나 흔드는 놀이 활동입니다.&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/section&gt;
+</code></pre>
+                                    </div>
+                                    <!-- //t_code -->
+                                </div>
+                                <!-- //t_ex_sub -->
+                            </details>
+                        </div>
+                        <!-- //t_example -->
+                        <div class="t_desc_refer">
+                            <h6 class="t_refer_tit">참고하기</h6>
+                            <p class="t_refer_desc">요소 플로우 차트</p>
+                            <p class="t_refer_desc2">
+                                <details>
+                                    <summary>
+                                        <h5 class="t_ex_tit">열어보기</h5>
+                                    </summary>
+                                    <div class="t_img"><img src="assets/img/htmlElement_flowchart.png" alt="요소 플로우차트"></div>
+                                </details>
+                            </p>
+                        </div>
+                        <!-- //t_desc_refer -->
+                    </div>
+                    <!-- //t_content2 -->
                 </div>
                 <!-- //t_content -->
             </div>

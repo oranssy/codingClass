@@ -11,23 +11,23 @@
     <meta name="Subject" content="HTML Basic Reference">
     <meta name="Title" content="HTML Basic Reference _oranssy">
     <meta name="Author" content="오란씨">
-    <meta name="Description" content="프론트엔드 개발자를 목표로 하는 오란씨의 HTML 참고자료 입니다.">
+    <meta name="Description" content="프론트엔드 개발자를 목표로 하는 오란씨의 HTML 참고 자료입니다.">
     <meta name="Keywords" content="HTML, html5, 개념, 자료, reference, publisher, frontend">
 
     <!-- Open Graph -->
     <meta property="og:title" content="HTML 시멘틱 마크업 | oranssy">
     <meta property="og:type" content="reference">
-    <meta property="og:image" content="https://oranssy.github.io/codingClass/img/basic/cat_oran__1080.jpg">
-    <meta property="og:description" content="코딩 공부 _HTML 참고자료입니다.">
+    <meta property="og:image" content="https://oranssy.github.io/codingClass/img/basic/img_oran_1080.png">
+    <meta property="og:description" content="코딩 _HTML 참고 자료입니다.">
     <meta property="og:url" content="https://oranssy.github.io/codingClass/HTML/semanticMarkup.html">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/img/studyHTML_16x16.ico">
-    <link rel="icon" href="assets/img/studyHTML_16x16.ico" sizes="16x16">
-    <link rel="icon" href="assets/img/studyHTML_32x32.ico" sizes="32x32">
-    <link rel="icon" href="assets/img/studyHTML_48x48.ico" sizes="48x48">
-    <link rel="icon" href="assets/img/studyHTML_64x64.ico" sizes="64x64">
-    <link rel="icon" href="assets/img/studyHTML_128x128.ico" sizes="128x128">
+    <link rel="icon" href="../img/basic/oran02_16.ico" sizes="16x16">
+    <link rel="icon" href="../img/basic/oran02_32.ico" sizes="32x32">
+    <link rel="icon" href="../img/basic/oran02_48.ico" sizes="48x48">
+    <link rel="icon" href="../img/basic/oran02_64.ico" sizes="64x64">
+    <link rel="icon" href="../img/basic/oran02_128.ico" sizes="128x128">
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/fonts.css">
@@ -214,96 +214,7 @@
                         </div>
                         <div class="t_example">
                             <div class="t_ex_sub">
-                                <h6 class="t_ex_subTit"><span class="t_ex_num">1</span>요소의 유형과 특성</h6>
-                                <p class="t_ex_desc">요소는 '줄 바꿈' 특성이 적용되는지에 따라 블록 레벨 요소와 인라인 레벨 요소로 구분하여 사용해왔습니다.</p>
-                                <table class="t_table">
-                                    <caption>요소의 유형과 특성</caption>
-                                    <colgroup>
-                                        <col style="width: 14%;">
-                                        <col style="width: 18%;">
-                                        <col style="width: 68%;">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">요소 유형</th>
-                                            <th scope="col">설명</th>
-                                            <th scope="col">특성</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th class="ce ve" rowspan="4" scope="rowgroup">
-                                                블록 레벨 요소 <br>
-                                                (Block-level Elements)
-                                            </th>
-                                            <td class="ve" rowspan="4">출력 화면에서 <i>사용 가능한 최대 너비를 차지하는 요소</i>를 의미합니다.</td>
-                                            <td class="ve">출력 화면에서 하나의 블록 요소는 <i>한 줄을 차지</i>하므로, 다음 요소는 열이 바뀌며 <i>줄 바꿈이 적용</i>됩니다.</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ve">CSS에서 width, height, margin, padding에 대한 속성 값을 정할 수 있습니다.</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ve">문자(Text)와 인라인 요소를 자식 요소로 가질 수 있습니다.</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ve">블록 요소 중에는 블록 요소를 자식 요소로 가질 수 있는 요소와 가질 수 없는 요소가 있습니다.</td>
-                                        </tr>
-                                        <tr>
-                                            <th class="ce ve" rowspan="7" scope="rowgroup">
-                                                인라인 레벨 요소 <br>
-                                                (Inline-level Elements)
-                                            </th>
-                                            <td class="ve" rowspan="7">출력 화면에서 <i>필요한 너비만 차지</i>하며, 하나의 줄 안에 포함되는 요소를 의미합니다.</td>
-                                            <td class="ve">출력 화면에서 하나의 인라인 요소는 <i>콘텐츠 내용의 크기만큼만 공간을 차지</i>하므로, 열이 바뀌지 않고 <i>한줄로 나란히 출력</i>됩니다.</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ve">
-                                                width, height에 대한 속성 값을 지정해도<i>반영되지 않습니다.</i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ve">
-                                                margin에 대한 속성 값은 요소 위치의 <i>좌우에만 반영</i>됩니다. <br>
-                                                &nbsp; ☛ 상,하단 여백은 margin이 아니라 line-height에 대한 속성 값으로 지정합니다. <br>
-                                                &nbsp; ☛ 인라인 요소가 연속으로 사용되는 경우, 최소한의 간격을 유지하기 위해 좌우에 약 5px의 기본적인 외부 여백이 생깁니다. <br>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ve">
-                                                padding에 대한 속성 값은 요소 위치의 <i>좌우에만 반영</i>됩니다. <br>
-                                                &nbsp; ☛ 아래의 예시를 보면, &lt;i&gt;의 padding 값이 하단에 반영된 것처럼 보입니다. 그러나 줄이 넘어가면 &lt;i&gt;의 padding 값이 하단 공간을 차지하지 않아 글자가 위로 올라온 것을 확인할 수 있습니다.
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ve">문자(Text)와 인라인 요소를 자식 요소로 가질 수 있습니다.</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ve">블록 요소를 자식 요소로 포함할 수 <i>없습니다.</i></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <!-- //t_table -->
-                                <div class="t_desc_refer">
-                                    <h6 class="t_refer_tit">참고하기</h6>
-                                    <p class="t_refer_desc"><span class="t_refer_num">1</span>CSS에서 요소의 특성 바꾸기</p>
-                                    <p class="t_refer_desc2">
-                                        display 속성은 요소의 특성을 블록과 인라인 중에서 적용하고, 자식요소의 레이아웃 배치 방법을 설정합니다. <br>
-                                        display: <span class="t_refer_point">block;</span> 블록 특성으로 바꾸기 <br>
-                                        display: <span class="t_refer_point">inline;</span> 인라인 특성으로 바꾸기 <br>
-                                        display: <span class="t_refer_point">inline-block;</span> 인라인이면서 블록 특성을 가지도록 바꾸기 ☛ <i>기본적으로 한 줄에 나란히 배치, width 와 height 값 설정 가능</i>
-                                    </p>
-                                    <!-- //t_refer_desc2 -->
-                                </div>
-                                <!-- //t_desc_refer -->
-                                <div class="t_iframe">
-                                    <iframe title="Block_level_elements" src="https://codepen.io/oranssy/embed/QWVLdLo?default-tab=html%2Cresult&theme-id=dark"></iframe>
-                                    <iframe title="Inline_level_elements" src="https://codepen.io/oranssy/embed/YzOKNXE?default-tab=html%2Cresult&theme-id=dark"></iframe>
-                                </div>
-                                <!-- //t_iframe -->
-                            </div>
-                            <!-- //t_ex_sub -->
-                            <div class="t_ex_sub">
-                                <h6 class="t_ex_subTit"><span class="t_ex_num">2</span>콘텐츠 모델 (Content-models)</h6>
+                                <h6 class="t_ex_subTit"><span class="t_ex_num">1</span>콘텐츠 모델 (Content-models)</h6>
                                 <p class="t_ex_desc">
                                     블록과 인라인으로만 구분되던 요소들은 HTML5 - 콘텐츠 모델에서부터 명확한 역할 수행, 비슷한 특성 요소들의 그룹화가 이루어졌습니다.
                                 </p>
@@ -431,6 +342,95 @@
                                     </a>
                                 </div>
                                 <!-- //t_ex_box -->
+                            </div>
+                            <!-- //t_ex_sub -->
+                            <div class="t_ex_sub">
+                                <h6 class="t_ex_subTit"><span class="t_ex_num">2</span>요소의 유형과 특성</h6>
+                                <p class="t_ex_desc">요소는 '줄 바꿈' 특성이 적용되는지에 따라 블록 레벨 요소와 인라인 레벨 요소로 구분하여 사용해왔습니다.</p>
+                                <table class="t_table">
+                                    <caption>요소의 유형과 특성</caption>
+                                    <colgroup>
+                                        <col style="width: 14%;">
+                                        <col style="width: 18%;">
+                                        <col style="width: 68%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">요소 유형</th>
+                                            <th scope="col">설명</th>
+                                            <th scope="col">특성</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="ce ve" rowspan="4" scope="rowgroup">
+                                                블록 레벨 요소 <br>
+                                                (Block-level Elements)
+                                            </th>
+                                            <td class="ve" rowspan="4">출력 화면에서 <i>사용 가능한 최대 너비를 차지하는 요소</i>를 의미합니다.</td>
+                                            <td class="ve">출력 화면에서 하나의 블록 요소는 <i>한 줄을 차지</i>하므로, 다음 요소는 열이 바뀌며 <i>줄 바꿈이 적용</i>됩니다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ve">CSS에서 width, height, margin, padding에 대한 속성 값을 정할 수 있습니다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ve">문자(Text)와 인라인 요소를 자식 요소로 가질 수 있습니다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ve">블록 요소 중에는 블록 요소를 자식 요소로 가질 수 있는 요소와 가질 수 없는 요소가 있습니다.</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="ce ve" rowspan="6" scope="rowgroup">
+                                                인라인 레벨 요소 <br>
+                                                (Inline-level Elements)
+                                            </th>
+                                            <td class="ve" rowspan="6">출력 화면에서 <i>필요한 너비만 차지</i>하며, 하나의 줄 안에 포함되는 요소를 의미합니다.</td>
+                                            <td class="ve">출력 화면에서 하나의 인라인 요소는 <i>콘텐츠 내용의 크기만큼만 공간을 차지</i>하므로, 열이 바뀌지 않고 <i>한줄로 나란히 출력</i>됩니다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ve">
+                                                width, height에 대한 속성 값을 지정해도<i>반영되지 않습니다.</i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ve">
+                                                margin에 대한 속성 값은 요소 위치의 <i>좌우에만 반영</i>됩니다. <br>
+                                                &nbsp; ☛ 상,하단 여백은 margin이 아니라 line-height에 대한 속성 값으로 지정합니다. <br>
+                                                &nbsp; ☛ 인라인 요소가 연속으로 사용되는 경우, 최소한의 간격을 유지하기 위해 좌우에 약 5px의 기본적인 외부 여백이 생깁니다. <br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ve">
+                                                padding에 대한 속성 값은 요소 위치의 <i>좌우에만 반영</i>됩니다. <br>
+                                                &nbsp; ☛ 아래의 예시를 보면, &lt;i&gt;의 padding 값이 하단에 반영된 것처럼 보입니다. 그러나 줄이 넘어가면 &lt;i&gt;의 padding 값이 하단 공간을 차지하지 않아 글자가 위로 올라온 것을 확인할 수 있습니다.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ve">문자(Text)와 인라인 요소를 자식 요소로 가질 수 있습니다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ve">블록 요소를 자식 요소로 포함할 수 <i>없습니다.</i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- //t_table -->
+                                <div class="t_desc_refer">
+                                    <h6 class="t_refer_tit">참고하기</h6>
+                                    <p class="t_refer_desc"><span class="t_refer_num">1</span>CSS에서 요소의 특성 바꾸기</p>
+                                    <p class="t_refer_desc2">
+                                        display 속성은 요소의 특성을 블록과 인라인 중에서 적용하고, 자식요소의 레이아웃 배치 방법을 설정합니다. <br>
+                                        display: <span class="t_refer_point">block;</span> 블록 특성으로 바꾸기 <br>
+                                        display: <span class="t_refer_point">inline;</span> 인라인 특성으로 바꾸기 <br>
+                                        display: <span class="t_refer_point">inline-block;</span> 인라인이면서 블록 특성을 가지도록 바꾸기 ☛ <i>기본적으로 한 줄에 나란히 배치, width 와 height 값 설정 가능</i>
+                                    </p>
+                                    <!-- //t_refer_desc2 -->
+                                </div>
+                                <!-- //t_desc_refer -->
+                                <div class="t_iframe">
+                                    <iframe title="Block_level_elements" src="https://codepen.io/oranssy/embed/QWVLdLo?default-tab=html%2Cresult&theme-id=dark"></iframe>
+                                    <iframe title="Inline_level_elements" src="https://codepen.io/oranssy/embed/YzOKNXE?default-tab=html%2Cresult&theme-id=dark"></iframe>
+                                </div>
+                                <!-- //t_iframe -->
                             </div>
                             <!-- //t_ex_sub -->
                         </div>
